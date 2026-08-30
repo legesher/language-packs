@@ -1,0 +1,225 @@
+name: Review a Language Pack (many terms at once)
+description: Go through the words a pack ships and say what works, what does not, and what you would use instead
+title: '[Review]: LANGUAGE (Python)'
+labels: [contrib:localization]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for reviewing. This is the bulk lane: you read the words a pack ships today and
+      respond to as many as you like in one issue. Thirty terms reviewed carefully are worth more
+      than 183 rushed, and a partial review submits perfectly well.
+
+      Two neighbouring forms, so you land in the right one:
+
+      - One word for one term, with your reasoning:
+        [Propose a Translation Option](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml)
+      - A word that is harmful, wrong in meaning, or mis-registered:
+        [Pack Feedback or Term Flag](https://github.com/legesher/legesher-translations/issues/new?template=pack_feedback.yml)
+
+      One thing worth knowing about this lane: you see the shipped word before you write your own,
+      so your answers are recorded as *responses to candidates* rather than as an unprompted first
+      instinct. Both are useful and we keep them distinct, because the word a speaker reaches for
+      before seeing any suggestion is the signal hardest to get and easiest to lose. If you would
+      rather offer a word without seeing the current one first, use the propose form.
+
+      The [reviewer guide](https://github.com/legesher/legesher-translations/blob/main/REVIEWING.md) explains how these reviews add up
+      to a pack becoming `reviewed` and then `official`.
+
+      **A person reads this before it goes anywhere.** New submissions are screened by a maintainer
+      before they become visible to other reviewers or exported to the public corpus, weekly at
+      minimum while volume is low.
+
+- type: dropdown
+  id: language
+  attributes:
+    label: Language being reviewed
+    description: Which language pack are you reviewing?
+    options:
+    - Amharic (am)
+    - Arabic (ar)
+    - Bengali (bn)
+    - Bosnian (bs)
+    - Burmese (my)
+    - Catalan (ca)
+    - Chinese (zh)
+    - Croatian (hr)
+    - Czech (cs)
+    - Danish (da)
+    - Dutch (nl)
+    - English (en)
+    - Finnish (fi)
+    - French (fr)
+    - Galician (gl)
+    - German (de)
+    - Greek (el)
+    - Gujarati (gu)
+    - Hebrew (he)
+    - Hindi (hi)
+    - Hungarian (hu)
+    - Indonesian (id)
+    - Irish (ga)
+    - Italian (it)
+    - Japanese (ja)
+    - Kannada (kn)
+    - Korean (ko)
+    - Latvian (lv)
+    - Macedonian (mk)
+    - Malay (ms)
+    - Malayalam (ml)
+    - Mongolian (mn)
+    - Norwegian (no)
+    - Persian (fa)
+    - Polish (pl)
+    - Portuguese (pt)
+    - Romanian (ro)
+    - Russian (ru)
+    - Scottish Gaelic (gd)
+    - Serbian (sr)
+    - Sinhala (si)
+    - Spanish (es)
+    - Sundanese (su)
+    - Swedish (sv)
+    - Telugu (te)
+    - Thai (th)
+    - Turkish (tr)
+    - Urdu (ur)
+    - Uzbek (uz)
+    - Vietnamese (vi)
+    - Welsh (cy)
+    - Other (no pack yet)
+  validations:
+    required: true
+
+- type: input
+  id: other_language
+  attributes:
+    label: If you chose Other — your language
+    description: |
+      Name it and, if you know it, include its BCP 47 code so we register it correctly. A language
+      with no pack yet is a welcome submission, not an edge case.
+    placeholder: e.g., Tigrinya (ti)
+
+- type: dropdown
+  id: python-version
+  attributes:
+    label: Python version reviewed
+    description: Which Python version's pack did you review? (Start with 3.10 — it has the base translations.)
+    options:
+    - 3.10 (base — contains all translations)
+    - '3.11'
+    - '3.12'
+    - '3.13'
+    - '3.14'
+    multiple: true
+  validations:
+    required: true
+
+- type: dropdown
+  id: language_claim
+  attributes:
+    label: Your relationship to this language
+    description: |
+      Anyone may review. This decides how your endorsements are weighted, never whether you are
+      welcome. Native speakers carry the weight that moves a pack up the ladder, and a fluent
+      reader's judgment still counts and is still recorded.
+    options:
+    - I am a native speaker
+    - I am fluent, not native
+    - I work with this language professionally (teacher, linguist, translator)
+    - I am learning it
+  validations:
+    required: true
+
+- type: textarea
+  id: qualifications
+  attributes:
+    label: Anything you want us to know about your background
+    description: |
+      Optional, and there is no bar to clear. Variety, region, whether you studied or teach
+      computing in this language: all of it helps us read your review well.
+    placeholder: |
+      e.g., Native speaker of Arabic (Egyptian variety), comfortable in Modern Standard Arabic.
+      Computer science student familiar with programming terminology.
+
+- type: textarea
+  id: review-notes
+  attributes:
+    label: Review notes
+    description: |
+      Use this notation for each translation you looked at:
+
+      - ✅ **Agree** — you would teach this word
+      - ❓ **Alternative** — you would use a different word (give it, and say why if you can)
+      - 🤔 **Unsure** — you are not sure a good rendering exists for this concept
+
+      List the keywords, builtins, or exceptions you reviewed. Skipping a word is always fine and
+      simply means no opinion.
+    placeholder: |
+      **Keywords:**
+      - `def` → `definir` ✅ natural and widely understood
+      - `return` → `regresar` ❓ consider `devolver` — more precise for returning a value
+      - `yield` → `ceder` 🤔 no direct equivalent in this context
+
+      **Builtins:**
+      - `print` → `imprimir` ✅
+      - `input` → `entrada` ❓ consider `leer` for readability
+  validations:
+    required: true
+
+- type: textarea
+  id: additional
+  attributes:
+    label: Additional context
+    description: |
+      Any cultural or linguistic context that would help? Variety or dialect considerations? How
+      programming concepts are usually taught in this language? Notes on how words should be formed
+      in your language are collected as commentary and outlive any single term.
+
+- type: dropdown
+  id: credit
+  attributes:
+    label: How would you like to be credited?
+    description: |
+      Anonymous is the default and costs you nothing: your endorsements count exactly the same.
+      You can change this later by asking.
+    options:
+    - Anonymous (default)
+    - My GitHub handle
+    - A display name I will give you
+  validations:
+    required: true
+
+- type: input
+  id: credit_text
+  attributes:
+    label: Your display name, if you chose one
+    description: |
+      Only used when you picked "A display name I will give you" above. If that is your choice and
+      this field is blank, we record you as anonymous until you give us the name — here or at
+      contribute@legesher.com, whichever you prefer.
+    placeholder: e.g., Dr. A. Translator
+
+- type: checkboxes
+  id: consent
+  attributes:
+    label: Consent
+    options:
+    - label: I have read [Your contributions and your data](https://github.com/legesher/legesher-translations/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
+      required: true
+    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/legesher-translations/blob/main/CODE_OF_CONDUCT.md)
+      required: true
+
+- type: markdown
+  attributes:
+    value: |
+      **Do not put an email address in this issue.** GitHub issues are public and we do not collect
+      contact details on a public surface. If you would like us to be able to reach you about your
+      review, write to <contribute@legesher.com> and mention this issue.
+
+- type: markdown
+  attributes:
+    value: |
+      **What happens next:** a maintainer reads this, then your issue is closed with a reply naming
+      exactly what landed. Closed means recorded, never rejected — a submission that needs more
+      eyes is held, and the reply says so.

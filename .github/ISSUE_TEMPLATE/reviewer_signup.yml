@@ -1,0 +1,186 @@
+name: Native Reviewer Signup
+description: Volunteer to review a language pack in a language you speak
+title: '[Reviewer]: LANGUAGE'
+labels: [contrib:localization, contrib:community]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Reviewing is how a language pack stops being a machine's guesses and starts being a
+      community's decisions. You do not need to be a programmer, and you do not need to commit to
+      anything: reviewers work at whatever pace suits them, and a partial review is a real
+      contribution.
+
+      The [reviewer guide](https://github.com/legesher/legesher-translations/blob/main/REVIEWING.md) explains what reviewing involves,
+      what makes a pack `reviewed` and then `official`, and what we ask of you. Reading it first is
+      worth the ten minutes, though nothing here depends on having read it.
+
+      **A person reads this.** Signups are handled by a maintainer, weekly at minimum while volume
+      is low. You will get a reply on this issue.
+
+- type: dropdown
+  id: language
+  attributes:
+    label: The language you would review
+    description: |
+      One form per language. If you can review more than one, open a second form and say so, or
+      mention the others in the notes at the end.
+    options:
+    - Amharic (am)
+    - Arabic (ar)
+    - Bengali (bn)
+    - Bosnian (bs)
+    - Burmese (my)
+    - Catalan (ca)
+    - Chinese (zh)
+    - Croatian (hr)
+    - Czech (cs)
+    - Danish (da)
+    - Dutch (nl)
+    - English (en)
+    - Finnish (fi)
+    - French (fr)
+    - Galician (gl)
+    - German (de)
+    - Greek (el)
+    - Gujarati (gu)
+    - Hebrew (he)
+    - Hindi (hi)
+    - Hungarian (hu)
+    - Indonesian (id)
+    - Irish (ga)
+    - Italian (it)
+    - Japanese (ja)
+    - Kannada (kn)
+    - Korean (ko)
+    - Latvian (lv)
+    - Macedonian (mk)
+    - Malay (ms)
+    - Malayalam (ml)
+    - Mongolian (mn)
+    - Norwegian (no)
+    - Persian (fa)
+    - Polish (pl)
+    - Portuguese (pt)
+    - Romanian (ro)
+    - Russian (ru)
+    - Scottish Gaelic (gd)
+    - Serbian (sr)
+    - Sinhala (si)
+    - Spanish (es)
+    - Sundanese (su)
+    - Swedish (sv)
+    - Telugu (te)
+    - Thai (th)
+    - Turkish (tr)
+    - Urdu (ur)
+    - Uzbek (uz)
+    - Vietnamese (vi)
+    - Welsh (cy)
+    - Other (no pack yet)
+  validations:
+    required: true
+
+- type: input
+  id: other_language
+  attributes:
+    label: If you chose Other — your language
+    description: |
+      Name it and, if you know it, include its BCP 47 code so we register it correctly. A language
+      with no pack yet is a welcome submission, not an edge case.
+    placeholder: e.g., Tigrinya (ti)
+
+- type: dropdown
+  id: language_claim
+  attributes:
+    label: Your relationship to this language
+    description: |
+      Anyone may review. This decides how your endorsements are weighted, never whether you are
+      welcome. Native speakers carry the weight that moves a pack up the ladder, and a fluent
+      reader's judgment still counts and is still recorded.
+    options:
+    - I am a native speaker
+    - I am fluent, not native
+    - I work with this language professionally (teacher, linguist, translator)
+    - I am learning it
+  validations:
+    required: true
+
+- type: textarea
+  id: background
+  attributes:
+    label: Anything you want us to know about your background
+    description: |
+      Optional, and there is no bar to clear. Variety, region, whether you studied or teach
+      computing in this language: all of it helps us route the right terms to you.
+    placeholder: |
+      e.g., Native speaker of Egyptian Arabic, comfortable in Modern Standard Arabic, teach
+      introductory programming to secondary students.
+
+- type: dropdown
+  id: availability
+  attributes:
+    label: Roughly how much time do you have?
+    description: |
+      An honest estimate helps us size what we send you. Nobody is held to it, and "one term when
+      the mood strikes" is a real answer.
+    options:
+    - A few terms, occasionally
+    - An hour or two a month
+    - A few hours a month
+    - I would like to carry a whole pack through review
+  validations:
+    required: true
+
+- type: checkboxes
+  id: interests
+  attributes:
+    label: What would you like to work on?
+    description: Tick anything. This is a preference, not an assignment.
+    options:
+    - label: Keywords, builtins, and exceptions (the core vocabulary, about 180 concepts)
+    - label: Error messages and the phrases people see most
+    - label: The style profile for this language (how code should read, not which words it uses)
+    - label: Reviewing what a pack already ships, rather than proposing new words
+
+- type: dropdown
+  id: credit
+  attributes:
+    label: How would you like to be credited?
+    description: |
+      Anonymous is the default and costs you nothing: your endorsements count exactly the same.
+      You can change this later by asking.
+    options:
+    - Anonymous (default)
+    - My GitHub handle
+    - A display name I will give you
+  validations:
+    required: true
+
+- type: input
+  id: credit_text
+  attributes:
+    label: Your display name, if you chose one
+    description: |
+      Only used when you picked "A display name I will give you" above. If that is your choice and
+      this field is blank, we record you as anonymous until you give us the name — here or at
+      contribute@legesher.com, whichever you prefer.
+    placeholder: e.g., Dr. A. Translator
+
+- type: checkboxes
+  id: consent
+  attributes:
+    label: Consent
+    options:
+    - label: I have read [Your contributions and your data](https://github.com/legesher/legesher-translations/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
+      required: true
+    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/legesher-translations/blob/main/CODE_OF_CONDUCT.md)
+      required: true
+
+- type: markdown
+  attributes:
+    value: |
+      **Do not put an email address in this issue.** GitHub issues are public and we do not collect
+      contact details on a public surface. Reviewer coordination that needs a private channel runs
+      by email: write to <contribute@legesher.com> and mention this issue, and we will pick it up
+      from there.

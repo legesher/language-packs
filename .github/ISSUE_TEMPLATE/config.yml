@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+- name: GitHub Discussions
+  url: https://github.com/legesher/legesher-translations/discussions
+  about: Ask questions and discuss ideas with the community
+- name: Documentation
+  url: https://docs.legesher.io
+  about: Browse our documentation for help and guides
+- name: Hosted Service & Plans
+  url: mailto:sales@legesher.com
+  about: Email us about the hosted translation service, plans, or enterprise use
+- name: Security Issue
+  url: mailto:security@legesher.com
+  about: Report security vulnerabilities privately
