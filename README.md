@@ -2,7 +2,7 @@
 
 <h1 align="center">Legesher Translations</h1>
 <blockquote align="center">Where programming vocabulary becomes your language's own ✏️💻</blockquote>
-<p align="center">This repository is the contribution home for Legesher's language work: the place a word you would teach enters the shared map, gets reviewed by people who live in the language, and becomes part of a shipped language pack.</p>
+<p align="center">This repository is the contribution home for Legesher's language work: the place a word you would teach enters the shared corpus, gets reviewed by people who live in the language, and becomes part of a shipped language pack.</p>
 
 <p align="center">
     <a href="http://makeapullrequest.com">
@@ -33,12 +33,13 @@ from datasets import load_dataset
 options = load_dataset("legesher/language-corpus", "options")
 ```
 
-The engine and the shipped packs live in the Legesher monorepo (`pip install legesher-i18n`); this
-repository is where the community's evidence comes in and where pack releases are cut.
+The shipped packs are published alongside the corpus as the
+[language-packs dataset](https://huggingface.co/datasets/legesher/language-packs); the engine that
+reads them is released separately. This repository is where the community's evidence comes in.
 
 ## The ground rules, briefly
 
-- [Community Guidelines](COMMUNITY_GUIDELINES.md) — the shared map and how disagreement works.
+- [Community Guidelines](COMMUNITY_GUIDELINES.md) — the shared corpus and how disagreement works.
 - [Reviewing guide](REVIEWING.md) — what reviewing looks like, who can review, how packs promote.
 - [AI-Assisted Contributions](AI_CONTRIBUTIONS.md) — welcome, declared, zero machine weight at the gates.
 - [Your contributions and your data](CONTRIBUTOR_PRIVACY.md) — credit is opt-in, withdrawal is real, and the limits are stated plainly.

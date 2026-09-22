@@ -1,7 +1,7 @@
 # Contributing
 
 This repository is the home of translation contribution for Legesher: the place a word you would
-teach becomes part of the shared map. Everything here is built so that a linguist, a teacher, or a
+teach becomes part of the shared corpus. Everything here is built so that a linguist, a teacher, or a
 careful reader can contribute without knowing git — and so that a developer can go deeper when they
 want to.
 

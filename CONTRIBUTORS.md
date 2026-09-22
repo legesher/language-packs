@@ -3,7 +3,7 @@
 Every human who contributed to **legesher-translations** before it was archived is named here, organized by the way they participated. This supplements the emoji-badge table in [README.md](README.md) (generated from [`.all-contributorsrc`](.all-contributorsrc)).
 
 **Related:**
-- Active Legesher translation work has moved to the monorepo at [Legesher/legesher/libs/i18n/](https://github.com/legesher/legesher/tree/main/libs/i18n)
+- Active translation work now runs through this repository's forms and review lanes; the living data is the public [language corpus](https://huggingface.co/datasets/legesher/language-corpus) and [language-packs](https://huggingface.co/datasets/legesher/language-packs) datasets named in [README.md](README.md)
 - Full community review discussions for Spanish and German preserved in [`docs/review-history/`](docs/review-history/)
 - All contributor commits preserved in `main`'s ancestry via merge-ours commits (see [PR #322](https://github.com/legesher/legesher-translations/pull/322))
 

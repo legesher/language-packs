@@ -2,11 +2,11 @@
 
 How we build together. This document sits alongside the [Code of Conduct](CODE_OF_CONDUCT.md): the
 Code of Conduct covers how we treat each other, and these guidelines cover how we work on a shared
-map of programming terminology without stepping on each other.
+corpus of programming terminology without stepping on each other.
 
 If you only read one section, read the next one.
 
-## The shared map, and how disagreement works
+## The shared corpus, and how disagreement works
 
 Legesher collects every translation offered for every term as an option in a shared database. A
 language pack is an export: the current best pick for each concept, chosen from the options that
@@ -23,7 +23,7 @@ That design carries a social contract:
 - **A pick is a snapshot, not a verdict.** Today's export reflects today's endorsements. When better
   options arrive and native reviewers endorse them, the pick moves. Losing a round says nothing
   about the value of the word you offered.
-- **Nothing is wasted.** Options that don't win stay in the map with their provenance and their
+- **Nothing is wasted.** Options that don't win stay in the corpus with their provenance and their
   endorsements. They inform style profiles, research, and future picks. The record is append-only
   on purpose. (Losing a ranking and failing moderation are different things: a submission the
   screen rejects — for conduct or mechanical validity, with the reason cited — stays in the record
@@ -65,7 +65,7 @@ When something is flagged, whether by the screening gate or by a person:
    failed.
 3. Appeals follow the Code of Conduct's reporting and appeal path.
 
-Moderation exists to keep the map trustworthy, and it is deliberately narrow: mechanical validity
+Moderation exists to keep the corpus trustworthy, and it is deliberately narrow: mechanical validity
 and conduct are the only things that block. Creative disagreement is never a moderation matter.
 
 ## Style guides are suggestions

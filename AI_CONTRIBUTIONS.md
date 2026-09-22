@@ -46,7 +46,7 @@ your language pack's terms, and report what actually happens. Which surface to u
 issue.
 
 The observation is the contribution. Where the assistant understood you, where it drifted back to
-English, which terms it refused to use: those reports feed the shared terminology map and our
+English, which terms it refused to use: those reports feed the shared terminology corpus and our
 research directly. No fix is expected from you. These issues are a first entry path for people who
 want to contribute but do not know where to start, and they matter more than they look.
 
