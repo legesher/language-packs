@@ -13,18 +13,18 @@
 
 ## Start here
 
-- **Offer a word** — [propose a translation option](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml): one term, your word, your reasoning.
-- **Review a pack** — [many terms in one issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml), or a full session by file through the [bundle lane](REVIEWING.md#7-review-sessions-by-file-the-bundle-lane).
-- **Join as a reviewer** — [sign up](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml) and tell us your language.
-- **Read the guide** — [REVIEWING.md](REVIEWING.md) walks the whole journey; it is written for linguists and teachers as much as developers, and you do not need to know Python to review a Python pack.
+- **Offer a word**: [propose a translation option](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml) (one term, your word, your reasoning).
+- **Review a pack**: [many terms in one issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml), or a full session by file through the [bundle lane](REVIEWING.md#7-review-sessions-by-file-the-bundle-lane).
+- **Join as a reviewer**: [sign up](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml) and tell us your language.
+- **Read the guide**: [REVIEWING.md](REVIEWING.md) walks the whole journey; it is written for linguists and teachers as much as developers, and you do not need to know Python to review a Python pack.
 
 ## How your word becomes a shipped pack
 
 Every submission is read by a person before it goes anywhere, then joins the open evidence: the
-**[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face —
+**[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face,
 every candidate rendering and every endorsement ever offered, openly licensed (CC BY 4.0),
 contributors identified only by opaque ids. Endorsements accumulate; when a language crosses a
-promotion gate — reviewed by native speakers, or ratified official by a convened session — the pack
+promotion gate (reviewed by native speakers, or ratified official by a convened session) the pack
 re-releases with the community's words. Your dissent stays in the record and keeps working for you:
 we collect **options**, not winners.
 
@@ -39,11 +39,11 @@ reads them is released separately. This repository is where the community's evid
 
 ## The ground rules, briefly
 
-- [Community Guidelines](COMMUNITY_GUIDELINES.md) — the shared corpus and how disagreement works.
-- [Reviewing guide](REVIEWING.md) — what reviewing looks like, who can review, how packs promote.
-- [AI-Assisted Contributions](AI_CONTRIBUTIONS.md) — welcome, declared, zero machine weight at the gates.
-- [Your contributions and your data](CONTRIBUTOR_PRIVACY.md) — credit is opt-in, withdrawal is real, and the limits are stated plainly.
-- [Code of Conduct](CODE_OF_CONDUCT.md) — how we treat each other, in every language.
+- [Community Guidelines](COMMUNITY_GUIDELINES.md): the shared corpus and how disagreement works.
+- [Reviewing guide](REVIEWING.md): what reviewing looks like, who can review, how packs promote.
+- [AI-Assisted Contributions](AI_CONTRIBUTIONS.md): welcome, declared, zero machine weight at the gates.
+- [Your contributions and your data](CONTRIBUTOR_PRIVACY.md): credit is opt-in, withdrawal is real, and the limits are stated plainly.
+- [Code of Conduct](CODE_OF_CONDUCT.md): how we treat each other, in every language.
 
 **We never ask for your email on a public form.** Contact travels a private channel:
 <contribute@legesher.com>.
@@ -51,11 +51,11 @@ reads them is released separately. This repository is where the community's evid
 ## The first era, honored
 
 Before the corpus existed, 149 contributors built Legesher's translation infrastructure in this
-repository — locale files, review discussions, the proof that communities would do this work. That
+repository: locale files, review discussions, the proof that communities would do this work. That
 era is preserved exactly as it was at the tag
 [`v1-archive`](https://github.com/legesher/legesher-translations/releases/tag/v1-archive), its
 words and review signal live on inside the corpus, and its people are credited in
-[CONTRIBUTORS.md](CONTRIBUTORS.md) and below — permanently.
+[CONTRIBUTORS.md](CONTRIBUTORS.md) and below, permanently.
 
 ## License
 

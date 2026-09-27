@@ -114,10 +114,10 @@ the current pick, and the review app will do the same for every term. The bulk r
 exception, because you are reading the shipped pack: those answers are recorded as responses to
 candidates rather than as first instincts, and both are kept, distinctly.
 
-**Endorse, pass, or flag — and rank, tag, comment.** Endorse every word you would genuinely teach,
+**Endorse, pass, or flag (and rank, tag, comment).** Endorse every word you would genuinely teach,
 including words other people proposed. Rank your endorsements: slot 1 means "ship this". Tag
 descriptors such as transliteration, loanword, established, coinage, region, or register. Passing on
-a word is always allowed and means "no opinion" — it is never held against the word or against you.
+a word is always allowed and means "no opinion". It is never held against the word or against you.
 (On the bulk review form these read as ✅ = endorse, ❓ = offer an alternative, 🤔 = a comment worth
 keeping.)
 
@@ -138,16 +138,16 @@ flag routes to a person and rejects nothing on its own.
 
 The whole journey, plainly:
 
-1. **You submit** — a form, or a review session by pull request (§7).
+1. **You submit**: a form, or a review session by pull request (§7).
 2. **A person reads it.** Every submission is held until a maintainer has screened it (§12). Your
-   issue will be **closed with a reply** naming exactly what landed — closed means *recorded*, never
+   issue will be **closed with a reply** naming exactly what landed. Closed means *recorded*, never
    rejected. A submission that cannot be cleared yet is either **held** (usually: waiting for a
    native reviewer of your language to exist) or **returned or rejected with the reason cited**. A
-   held submission stays out of sight until a reviewer can look at it — time alone clears nothing,
+   held submission stays out of sight until a reviewer can look at it. Time alone clears nothing,
    and we would rather say that than pretend otherwise.
 3. **Cleared words join the corpus.** The evidence lives in
    [`legesher/language-corpus`](https://huggingface.co/datasets/legesher/language-corpus) on
-   Hugging Face — every candidate rendering and every endorsement, under CC BY 4.0, with
+   Hugging Face: every candidate rendering and every endorsement, under CC BY 4.0, with
    contributors as opaque ids. See your language's evidence yourself:
 
    ```python
@@ -157,13 +157,13 @@ The whole journey, plainly:
 
 4. **Endorsements accumulate; gates release.** Nothing you do edits a shipped pack directly. When a
    language crosses a gate (§9), the pick is re-cut from the evidence and a new pack version ships.
-   Your dissent — the words that did not win — stays in the corpus, still working for you.
+   Your dissent (the words that did not win) stays in the corpus, still working for you.
 
 ## 7. Review sessions by file (the bundle lane)
 
 For a full session over many terms, the file lane beats forms: take the **review kit** for your
 language (terms, candidates, and context, deliberately without anyone else's verdicts), record your
-endorsements, passes, flags, rankings, and your own renderings, and produce a **bundle** — a single
+endorsements, passes, flags, rankings, and your own renderings, and produce a **bundle**: a single
 JSON file in the shape the bundle schema defines (it ships with the `legesher-i18n` package). A
 review app that walks the kit and writes the bundle for you is being built; writing it by hand or
 by script works today.
@@ -173,10 +173,10 @@ PR with schema and mechanical results; a maintainer does the human screen; **mer
 evidence is accepted** and enters the same import, screening, and corpus path as every other lane.
 Until the incoming directory and its checks are live, attach the bundle file to a
 [bulk review issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml)
-instead — same contract, same destination.
+instead: same contract, same destination.
 
 One rule protects everyone: **a bundle is a public artifact.** No email address or private contact
-detail ever goes in one — contact travels the private channel (§11).
+detail ever goes in one. Contact travels the private channel (§11).
 
 ## 8. What blocks a submission, and what never does
 
@@ -256,7 +256,7 @@ your identity remains withdrawable (§11).
 - Words and comments you submit ship inside the Apache-2.0 language packs and are published in the
   public research corpus under CC BY 4.0. On the pull-request lane your commits carry a
   [DCO sign-off](CONTRIBUTING.md#developer-certificate-of-origin-dco) attesting the work is yours to
-  give; on the issue-form lanes there is no sign-off step — the consent box you tick records the
+  give; on the issue-form lanes there is no sign-off step. The consent box you tick records the
   same attestation together with the notice version.
 - The published corpus credits you by opaque contributor id, plus your chosen credit where you chose
   one. Your identity details are never part of the published dataset, and you may withdraw at any

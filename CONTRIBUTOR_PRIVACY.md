@@ -1,6 +1,6 @@
 # Your contributions and your data
 
-**Version 1.0 — 2026-08-10**
+**Version 1.0 · 2026-08-10**
 
 When you offer a translation to Legesher, two things happen: your word joins a public research
 corpus, and a record that *you* offered it exists in our database. This document explains both,
@@ -10,7 +10,7 @@ It sits alongside the [Community Guidelines](COMMUNITY_GUIDELINES.md), which cov
 together, and [CONTRIBUTING.md](CONTRIBUTING.md), which covers how to submit. This one covers what
 happens to your work and to you afterwards.
 
-If you only read one thing: **your word is published, your name is not — unless you ask for it to
+If you only read one thing: **your word is published, your name is not, unless you ask for it to
 be.**
 
 ## What happens to a word you offer
@@ -18,13 +18,13 @@ be.**
 Legesher keeps every translation anyone has ever proposed for a programming term, in a shared
 database. Your submission becomes two records:
 
-- **An option** — the word itself, the concept it renders, the language, and where it came from.
-- **An endorsement** — a record that a person stood behind that word, which is what moves a
+- **An option**: the word itself, the concept it renders, the language, and where it came from.
+- **An endorsement**: a record that a person stood behind that word, which is what moves a
   language pack from experimental toward official.
 
 Both are published in the **Legesher language corpus**, a public research dataset. This is the point
 of the project: the corpus is how a community's own decisions about its programming vocabulary
-become visible, citable, and reusable by people we will never meet — researchers, educators, and
+become visible, citable, and reusable by people we will never meet: researchers, educators, and
 other language projects.
 
 The corpus is released under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**. Anyone
@@ -53,8 +53,8 @@ and it is opaque, so nobody can work backwards from it to you.
 
 Two consequences worth understanding:
 
-- **The published corpus contains no names, handles, or email addresses.** Not obscured ones —
-  none. If someone downloads the dataset, they can see that one contributor endorsed forty words in
+- **The published corpus contains no names, handles, or email addresses.** Not obscured ones.
+  None. If someone downloads the dataset, they can see that one contributor endorsed forty words in
   Amharic. They cannot tell who.
 - **We hold the only mapping.** A private table connects your opaque id to your GitHub username,
   your contact address, and your credit preference. It is never exported, and the export tooling
@@ -75,14 +75,14 @@ Beyond identity, some things are deliberately withheld:
 
 ## Credit
 
-Credit is **opt-in**. By default you are anonymous, and staying anonymous costs you nothing — your
+Credit is **opt-in**. By default you are anonymous, and staying anonymous costs you nothing: your
 endorsements count exactly the same.
 
 You may choose:
 
-- **Anonymous** (the default) — only the opaque id appears, anywhere.
-- **Handle** — your GitHub handle may be shown where contributors are credited.
-- **Name** — a display name you give us may be shown instead.
+- **Anonymous** (the default): only the opaque id appears, anywhere.
+- **Handle**: your GitHub handle may be shown where contributors are credited.
+- **Name**: a display name you give us may be shown instead.
 
 You may change this at any time by asking. Changing it forward is immediate; it does not rewrite
 dataset revisions that were published before you changed it.
@@ -91,8 +91,8 @@ dataset revisions that were published before you changed it.
 
 You may ask us to remove your personal data at any time, for any reason, without explaining why.
 
-**What we do.** We erase every field that could identify you — the username your id was derived
-from, your display name, your handle, your contact address — and record that a withdrawal happened
+**What we do.** We erase every field that could identify you (the username your id was derived
+from, your display name, your handle, your contact address) and record that a withdrawal happened
 on that date. What remains is a row saying "this contributor withdrew," attached to an id that no
 longer leads anywhere.
 
@@ -105,12 +105,12 @@ deliberate, and it is the one part of this policy we ask you to accept rather th
 - The record no longer says anything about *you*. Once the mapping is erased, an endorsement is a
   data point with no person attached.
 
-If what you want is your *contributions* removed rather than your *identity*, say so — that is a
+If what you want is your *contributions* removed rather than your *identity*, say so. That is a
 different request, we will discuss it with you, and we will not pretend it is the same thing.
 
 **Why we keep an empty record instead of deleting the row.** Contributions arrive in batches that
-carry your username. If we ever rebuild the database from those batches — after a bug, or to correct
-a record, both of which happen — an importer that has no memory of your withdrawal would recreate
+carry your username. If we ever rebuild the database from those batches (after a bug, or to correct
+a record, both of which happen), an importer that has no memory of your withdrawal would recreate
 your identity from the batch and undo it. The withdrawal marker is what prevents that. It holds no
 information about you; it exists only to make sure the erasure sticks.
 
@@ -120,7 +120,7 @@ later:
 - If you submitted through a public pull request or issue, that submission is part of a public
   repository's history under your own account. We cannot retroactively unpublish something you
   published yourself.
-- Where your identity was recorded in our own repository, removing it is a commit — and the commits
+- Where your identity was recorded in our own repository, removing it is a commit, and the commits
   before it still contain it. Clearing repository history requires a rewrite, which we do at defined
   points rather than on demand. Ask us where that stands and we will tell you.
 
@@ -128,15 +128,15 @@ Withdrawal covers our database and our published datasets completely. It does no
 history, and we would rather say so than let "we deleted it" quietly mean less than you assumed.
 
 **Coming back.** If you withdraw and later want to contribute again, just say so. We clear the
-marker and record your consent afresh — it never happens automatically.
+marker and record your consent afresh. It never happens automatically.
 
 ## How to ask
 
 Any of these reaches a person:
 
-- **Privacy, credit, or withdrawal requests** — <privacy@legesher.com>
-- **Anything about contributing** — <contribute@legesher.com>
-- **General discussion** —
+- **Privacy, credit, or withdrawal requests**: <privacy@legesher.com>
+- **Anything about contributing**: <contribute@legesher.com>
+- **General discussion**:
   [GitHub Discussions](https://github.com/legesher/legesher-translations/discussions)
 
 You do not need to use particular wording. "Please remove me" is enough.
@@ -150,7 +150,7 @@ authority. The full enumeration lives in the
 
 This notice is versioned, and the version you agreed to is recorded with your consent. If we change
 what we do with contributor data in any way that matters, we publish a new version and record the
-change here — we do not quietly amend the old one.
+change here. We do not quietly amend the old one.
 
 | Version | Date | Change |
 | --- | --- | --- |
@@ -158,7 +158,7 @@ change here — we do not quietly amend the old one.
 | `oss-pre-notice` | before 2026-08-10 | Not a version of this notice. See below. |
 
 **If your consent is recorded as `oss-pre-notice`,** it means you contributed
-before this notice existed — through a public pull request under your own
+before this notice existed: through a public pull request under your own
 account, credited by handle in the language pack changelogs at the time. We
 record that rather than leaving it blank, because leaving it blank would say
 nobody ever agreed to anything, and recording `1.0` would claim you accepted a

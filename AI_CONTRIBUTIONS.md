@@ -57,17 +57,17 @@ provenance recorded: who or what proposed it, how, and when. Machine-suggested o
 in that collection and are labeled as machine-provenance in the database. They compete on merit with
 every other option.
 
-Models review as well as propose — ranking, annotating, flagging things worth a human's attention —
+Models review as well as propose (ranking, annotating, flagging things worth a human's attention),
 and machine reviews are labeled as machine reviews everywhere they appear, carrying **zero weight
 toward every promotion gate**. Where humans are counted, the [reviewer guide](REVIEWING.md) states
 the exact rules: the `reviewed` tier counts native endorsements; the `official` gate's review depth
-counts any screened human reviewer; and the act that promotes a pack — the convened ratification
-session — is valid only with a quorum of verified native speakers.
+counts any screened human reviewer; and the act that promotes a pack (the convened ratification
+session) is valid only with a quorum of verified native speakers.
 
 One rule has no exceptions: **sign-off is human.** A model's proposal can enter the options and a
 model's review can point people at problems, but no machine's opinion moves a term up the ladder or
 ships a pack. AI drafts; people decide what their language ships with. What happens to the words
-you contribute — credit, withdrawal, publication — is covered by
+you contribute (credit, withdrawal, publication) is covered by
 [the contributor notice](CONTRIBUTOR_PRIVACY.md).
 
 ## The line, in four sentences

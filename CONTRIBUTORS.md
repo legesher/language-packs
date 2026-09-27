@@ -9,22 +9,22 @@ Every human who contributed to **legesher-translations** before it was archived 
 
 ### How we mapped commits to GitHub accounts
 
-Many contributors committed under their personal email (not a GitHub noreply address), so their GitHub login isn't encoded in the commit. GitHub's REST API provides an authoritative `.author.login` field on every commit — it matches the commit's email against verified emails on every GitHub account and returns the linked account if one exists. We used that API to resolve 48 of 50 commit-only contributors to their real GitHub logins. The remaining 2 (Alicia Cisneros and David Sennekool) didn't auto-link but were confirmed by exact name match to existing `@aliciacisnerosm` and `@davidsennekool` — resolved via manual override. **Every human who ever touched this repo now has their GitHub login on record.**
+Many contributors committed under their personal email (not a GitHub noreply address), so their GitHub login isn't encoded in the commit. GitHub's REST API provides an authoritative `.author.login` field on every commit. It matches the commit's email against verified emails on every GitHub account and returns the linked account if one exists. We used that API to resolve 48 of 50 commit-only contributors to their real GitHub logins. The remaining 2 (Alicia Cisneros and David Sennekool) didn't auto-link but were confirmed by exact name match to existing `@aliciacisnerosm` and `@davidsennekool`, resolved via manual override. **Every human who ever touched this repo now has their GitHub login on record.**
 
 ## Translators
 
-Native-language speakers who contributed Python keyword translations. Contributions preserved via merge-ours commits on `main` — every commit's original author/timestamp is intact.
+Native-language speakers who contributed Python keyword translations. Contributions preserved via merge-ours commits on `main`. Every commit's original author/timestamp is intact.
 
 ### Multi-language translators
 
-- **Madison (Pfaff) Edgar** ([@madiedgar](https://github.com/madiedgar)) — Azerbaijani, Danish, Finnish, French, German, Gujarati, Hindi, Polish, Portuguese, Romanian, Spanish, Swahili, Telugu, Ukrainian, Urdu, Welsh
-- **Kim Wysocki** ([@KChantal](https://github.com/KChantal)) — Chinese, French, Russian
-- **aadii0408** ([@aadii0408](https://github.com/aadii0408)) — Gujarati, Hindi
-- **Ln11211** ([@Ln11211](https://github.com/Ln11211)) — Hindi, Telugu
-- **Nidhir Bhatt** ([@Nidhir2k1](https://github.com/Nidhir2k1)) — Gujarati, Hindi
-- **nik** ([@nik132-eng](https://github.com/nik132-eng)) — Gujarati, Hindi
-- **Sans** ([@sneha-thyagarajan](https://github.com/sneha-thyagarajan)) — Hindi, Telugu
-- **Shivlal Sharma** ([@sshiv5768](https://github.com/sshiv5768)) — Gujarati, Hindi
+- **Madison (Pfaff) Edgar** ([@madiedgar](https://github.com/madiedgar)): Azerbaijani, Danish, Finnish, French, German, Gujarati, Hindi, Polish, Portuguese, Romanian, Spanish, Swahili, Telugu, Ukrainian, Urdu, Welsh
+- **Kim Wysocki** ([@KChantal](https://github.com/KChantal)): Chinese, French, Russian
+- **aadii0408** ([@aadii0408](https://github.com/aadii0408)): Gujarati, Hindi
+- **Ln11211** ([@Ln11211](https://github.com/Ln11211)): Hindi, Telugu
+- **Nidhir Bhatt** ([@Nidhir2k1](https://github.com/Nidhir2k1)): Gujarati, Hindi
+- **nik** ([@nik132-eng](https://github.com/nik132-eng)): Gujarati, Hindi
+- **Sans** ([@sneha-thyagarajan](https://github.com/sneha-thyagarajan)): Hindi, Telugu
+- **Shivlal Sharma** ([@sshiv5768](https://github.com/sshiv5768)): Gujarati, Hindi
 
 ### Single-language translators
 
@@ -202,23 +202,23 @@ Contributors who provided line-by-line review feedback on translation PRs. Full 
 
 ## Documentation, Code & Maintenance
 
-- **Adar Wallerstein** ([@Adarwall](https://github.com/Adarwall)) — doc
-- **Anna** ([@annahayhurst](https://github.com/annahayhurst)) — doc
-- **arjunshekhawat5** ([@arjunshekhawat5](https://github.com/arjunshekhawat5)) — content
-- **Fernanda Vieira** ([@fernandasj](https://github.com/fernandasj)) — doc, marketing
-- **Jonny Fluckey** ([@jonnyfluckey](https://github.com/jonnyfluckey)) — maintenance
-- **JosWambugu** ([@wambugucoder](https://github.com/wambugucoder)) — doc
-- **justin cole** ([@justin-at-straker](https://github.com/justin-at-straker)) — doc
-- **justin-cole** ([@justin-lourie-cole](https://github.com/justin-lourie-cole)) — doc
-- **lo0** ([@fishmandev](https://github.com/fishmandev)) — doc
-- **Madison (Pfaff) Edgar** ([@madiedgar](https://github.com/madiedgar)) — projectManagement
-- **Mary Paul** ([@chauxvive](https://github.com/chauxvive)) — doc
-- **VASANTH KUMAR B** ([@vasanthkumar18](https://github.com/vasanthkumar18)) — doc
-- **WANG - YANG** ([@wang-ories](https://github.com/wang-ories)) — doc
+- **Adar Wallerstein** ([@Adarwall](https://github.com/Adarwall)): doc
+- **Anna** ([@annahayhurst](https://github.com/annahayhurst)): doc
+- **arjunshekhawat5** ([@arjunshekhawat5](https://github.com/arjunshekhawat5)): content
+- **Fernanda Vieira** ([@fernandasj](https://github.com/fernandasj)): doc, marketing
+- **Jonny Fluckey** ([@jonnyfluckey](https://github.com/jonnyfluckey)): maintenance
+- **JosWambugu** ([@wambugucoder](https://github.com/wambugucoder)): doc
+- **justin cole** ([@justin-at-straker](https://github.com/justin-at-straker)): doc
+- **justin-cole** ([@justin-lourie-cole](https://github.com/justin-lourie-cole)): doc
+- **lo0** ([@fishmandev](https://github.com/fishmandev)): doc
+- **Madison (Pfaff) Edgar** ([@madiedgar](https://github.com/madiedgar)): projectManagement
+- **Mary Paul** ([@chauxvive](https://github.com/chauxvive)): doc
+- **VASANTH KUMAR B** ([@vasanthkumar18](https://github.com/vasanthkumar18)): doc
+- **WANG - YANG** ([@wang-ories](https://github.com/wang-ories)): doc
 
 ## Community & Discussion Contributors
 
-Contributors who engaged via GitHub issues — reported bugs, asked questions, participated in discussions. Full list preserved with the `community` 👥 emoji badge in [README.md](README.md).
+Contributors who engaged via GitHub issues: reported bugs, asked questions, participated in discussions. Full list preserved with the `community` 👥 emoji badge in [README.md](README.md).
 
 **121 total community contributors** (of whom **42 engaged only via issues**, never committing or submitting a PR). Selected highlights:
 
@@ -252,10 +252,10 @@ Contributors who engaged via GitHub issues — reported bugs, asked questions, p
 - **Romina Caraba-Thampi** ([@rominacarabathampi](https://github.com/rominacarabathampi))
 - **Rutam Prita Mishra** ([@Rutam21](https://github.com/Rutam21))
 - **Sandip Palit** ([@SandipPalit](https://github.com/SandipPalit))
-- *… plus 12 more — see [README.md](README.md)'s contributor table*
+- *… plus 12 more (see [README.md](README.md)'s contributor table)*
 
 ---
 
-**Total unique contributors: 149** — all with GitHub accounts, all credited in [`.all-contributorsrc`](.all-contributorsrc) with emoji badges on the README.
+**Total unique contributors: 149**, all with GitHub accounts, all credited in [`.all-contributorsrc`](.all-contributorsrc) with emoji badges on the README.
 
-If you've been missed, please let us know — even though the repo is archived, this file can be corrected via a PR that's then merged and re-archived. The paramount goal of the archive-and-merge process was "no contributor goes uncredited."
+If you've been missed, please let us know. Even though the repo is archived, this file can be corrected via a PR that's then merged and re-archived. The paramount goal of the archive-and-merge process was "no contributor goes uncredited."

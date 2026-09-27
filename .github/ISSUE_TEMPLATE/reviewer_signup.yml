@@ -84,7 +84,7 @@ body:
 - type: input
   id: other_language
   attributes:
-    label: If you chose Other — your language
+    label: Your language, if you chose Other
     description: |
       Name it and, if you know it, include its BCP 47 code so we register it correctly. A language
       with no pack yet is a welcome submission, not an edge case.
@@ -163,8 +163,8 @@ body:
     label: Your display name, if you chose one
     description: |
       Only used when you picked "A display name I will give you" above. If that is your choice and
-      this field is blank, we record you as anonymous until you give us the name — here or at
-      contribute@legesher.com, whichever you prefer.
+      this field is blank, we record you as anonymous until you give us the name (here or at
+      contribute@legesher.com, whichever you prefer).
     placeholder: e.g., Dr. A. Translator
 
 - type: checkboxes

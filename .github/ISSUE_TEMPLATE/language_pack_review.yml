@@ -94,7 +94,7 @@ body:
 - type: input
   id: other_language
   attributes:
-    label: If you chose Other — your language
+    label: Your language, if you chose Other
     description: |
       Name it and, if you know it, include its BCP 47 code so we register it correctly. A language
       with no pack yet is a welcome submission, not an edge case.
@@ -104,9 +104,9 @@ body:
   id: python-version
   attributes:
     label: Python version reviewed
-    description: Which Python version's pack did you review? (Start with 3.10 — it has the base translations.)
+    description: Which Python version's pack did you review? (Start with 3.10. It has the base translations.)
     options:
-    - 3.10 (base — contains all translations)
+    - 3.10 (base, contains all translations)
     - '3.11'
     - '3.12'
     - '3.13'
@@ -149,16 +149,16 @@ body:
     description: |
       Use this notation for each translation you looked at:
 
-      - ✅ **Agree** — you would teach this word
-      - ❓ **Alternative** — you would use a different word (give it, and say why if you can)
-      - 🤔 **Unsure** — you are not sure a good rendering exists for this concept
+      - ✅ **Agree**: you would teach this word
+      - ❓ **Alternative**: you would use a different word (give it, and say why if you can)
+      - 🤔 **Unsure**: you are not sure a good rendering exists for this concept
 
       List the keywords, builtins, or exceptions you reviewed. Skipping a word is always fine and
       simply means no opinion.
     placeholder: |
       **Keywords:**
       - `def` → `definir` ✅ natural and widely understood
-      - `return` → `regresar` ❓ consider `devolver` — more precise for returning a value
+      - `return` → `regresar` ❓ consider `devolver`, more precise for returning a value
       - `yield` → `ceder` 🤔 no direct equivalent in this context
 
       **Builtins:**
@@ -196,8 +196,8 @@ body:
     label: Your display name, if you chose one
     description: |
       Only used when you picked "A display name I will give you" above. If that is your choice and
-      this field is blank, we record you as anonymous until you give us the name — here or at
-      contribute@legesher.com, whichever you prefer.
+      this field is blank, we record you as anonymous until you give us the name (here or at
+      contribute@legesher.com, whichever you prefer).
     placeholder: e.g., Dr. A. Translator
 
 - type: checkboxes
@@ -221,5 +221,5 @@ body:
   attributes:
     value: |
       **What happens next:** a maintainer reads this, then your issue is closed with a reply naming
-      exactly what landed. Closed means recorded, never rejected — a submission that needs more
+      exactly what landed. Closed means recorded, never rejected. A submission that needs more
       eyes is held, and the reply says so.

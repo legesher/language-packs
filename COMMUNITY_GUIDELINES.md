@@ -26,7 +26,7 @@ That design carries a social contract:
 - **Nothing is wasted.** Options that don't win stay in the corpus with their provenance and their
   endorsements. They inform style profiles, research, and future picks. The record is append-only
   on purpose. (Losing a ranking and failing moderation are different things: a submission the
-  screen rejects — for conduct or mechanical validity, with the reason cited — stays in the record
+  screen rejects for conduct or mechanical validity, with the reason cited, stays in the record
   but out of every export. Rankings never reject anything.)
 - **Established beats invented, and coining is legitimate.** If your community's classrooms already
   have a word for a concept, that word carries the strongest claim. Where no native term exists
@@ -43,7 +43,7 @@ How that is enforced, in order:
 1. **A maintainer screens every submission before it is visible.** Automated screening does not
    exist yet, and until it does the screen is a person reading each new word. Your contribution is
    recorded on arrival and is held back from rankings and from the published corpus until it has
-   been read and cleared — the queue is walked weekly at minimum while volume is low. Being held is
+   been read and cleared (the queue is walked weekly at minimum while volume is low). Being held is
    not a punishment and never removes your contribution from the record; it means it has not been
    read yet, or that it needs eyes the maintainer does not have.
 2. **Native reviewers judge in context.** Words carry weight machines cannot see, in both
@@ -77,10 +77,10 @@ language community tends to write; it does not gatekeep what an individual is al
 
 ## Where conversations happen
 
-- **GitHub issues and pull requests** in this repository — the contribution forms and the
+- **GitHub issues and pull requests** in this repository: the contribution forms and the
   [reviewer guide](REVIEWING.md) are the way in.
 - **GitHub Discussions**, for questions, ideas, and anything that is not yet an issue.
-- **Reviewer coordination** runs by email today — <contribute@legesher.com>, mentioning your
+- **Reviewer coordination** runs by email today: <contribute@legesher.com>, mentioning your
   language. Per-language channels come as native-review activity grows.
 
 Thank you for being here. The community that forms around a language pack is the thing that makes
