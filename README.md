@@ -2,7 +2,7 @@
 
 <h1 align="center">Legesher Language Packs</h1>
 <blockquote align="center">What if the foundation of programming was in your language? ✏️💻</blockquote>
-<p align="center">This is the home for localizing Legesher's language packs. Share the words you would use to teach programming in your language, review the words other people have shared, and help your language's pack get ready for classrooms and codebases.</p>
+<p align="center">This repository is where the language community shapes the language used to express programming and has the opportunity for their voice to be heard. This is the contribution home for Legesher's language work, and your contribution will influence the vocabulary used to depict concepts as if first written for the native speaker instead of solely through the perspective of a native English speaker.</p>
 
 <p align="center">
     <a href="http://makeapullrequest.com">
@@ -11,16 +11,16 @@
         <img src="https://img.shields.io/badge/all_contributors-149-black?style=flat-square&color=f58977&labelColor=black" /></a>
 </p>
 
-## Get started
+## Start here
 
 You do not need to know how to code to contribute, and you do not need to know Python to review a Python pack.
 
-- **Share a word.** [Propose a word](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml) for one term and tell us why you chose it.
-- **Review a pack.** [Review many terms in one issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml), or [review by file](REVIEWING.md#7-reviewing-by-file) for a full session.
-- **Become a reviewer.** [Sign up](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml) and tell us your language.
+- **Offer a word.** [Propose a localization option](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml): select a term, share your word + give your reasoning.
+- **Review a language pack.** [Review many terms in one issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml), or [review by file](REVIEWING.md#7-reviewing-by-file) for a full session.
+- **Join as a reviewer.** [Sign up](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml) and tell us your language.
 - **Read the guide.** [REVIEWING.md](REVIEWING.md) explains how reviewing works from start to finish. It is written for linguists and teachers as well as developers.
 
-## What happens to your contribution
+## How your contribution helps shape the future
 
 1. A maintainer reads every submission before it is shown to anyone else.
 2. Once it is cleared, your word is added to the **[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face. The corpus holds every word anyone has offered for a term and every endorsement it has received. It is openly licensed (CC BY 4.0), and contributors appear in it only as opaque ids.
@@ -38,7 +38,7 @@ options = load_dataset("legesher/language-corpus", "options")
 
 The packs that ship are published as the [language-packs dataset](https://huggingface.co/datasets/legesher/language-packs). The engine that reads them is released separately.
 
-## Guidelines
+## Ground Rules
 
 - [Contributing](CONTRIBUTING.md): the ways to contribute and what to expect.
 - [Reviewing guide](REVIEWING.md): how reviewing works, who can review, and how a pack moves from experimental to official.
@@ -49,7 +49,7 @@ The packs that ship are published as the [language-packs dataset](https://huggin
 
 We never ask for your email on a public form. To reach us privately, write to <contribute@legesher.com>.
 
-## History
+## Honoring the Legacy
 
 This repository began as Legesher Translations. Before the corpus existed, 149 contributors built Legesher's first locale files and review discussions here, and showed that language communities would do this work. Thank you. That version of the repository is preserved at the tag [`v1-archive`](https://github.com/legesher/legesher-translations/releases/tag/v1-archive). Its words and review history are part of the corpus, and everyone who contributed is credited in [CONTRIBUTORS.md](CONTRIBUTORS.md) and below.
 
