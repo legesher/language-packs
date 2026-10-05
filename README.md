@@ -1,69 +1,63 @@
 <img src="/assets/README-EggPeggy.png" align="center"/>
 
-<h1 align="center">Legesher Translations</h1>
-<blockquote align="center">Where programming vocabulary becomes your language's own ✏️💻</blockquote>
-<p align="center">This repository is the contribution home for Legesher's language work: the place a word you would teach enters the shared corpus, gets reviewed by people who live in the language, and becomes part of a shipped language pack.</p>
+<h1 align="center">Legesher Language Packs</h1>
+<blockquote align="center">What if the foundation of programming was in your language? ✏️💻</blockquote>
+<p align="center">This is the home for localizing Legesher's language packs. Share the words you would use to teach programming in your language, review the words other people have shared, and help your language's pack get ready for classrooms and codebases.</p>
 
 <p align="center">
     <a href="http://makeapullrequest.com">
         <img src="https://img.shields.io/badge/pull_requests-welcome-brightgreen.svg?style=flat-square&labelColor=black" alt="Pull Requests Welcome"></a>
-    <a href="#the-community" alt="All Contributors">
+    <a href="#contributors" alt="All Contributors">
         <img src="https://img.shields.io/badge/all_contributors-149-black?style=flat-square&color=f58977&labelColor=black" /></a>
 </p>
 
-## Start here
+## Get started
 
-- **Offer a word**: [propose a translation option](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml) (one term, your word, your reasoning).
-- **Review a pack**: [many terms in one issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml), or a full session by file through the [bundle lane](REVIEWING.md#7-review-sessions-by-file-the-bundle-lane).
-- **Join as a reviewer**: [sign up](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml) and tell us your language.
-- **Read the guide**: [REVIEWING.md](REVIEWING.md) walks the whole journey; it is written for linguists and teachers as much as developers, and you do not need to know Python to review a Python pack.
+You do not need to know how to code to contribute, and you do not need to know Python to review a Python pack.
 
-## How your word becomes a shipped pack
+- **Share a word.** [Propose a word](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml) for one term and tell us why you chose it.
+- **Review a pack.** [Review many terms in one issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml), or [review by file](REVIEWING.md#7-reviewing-by-file) for a full session.
+- **Become a reviewer.** [Sign up](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml) and tell us your language.
+- **Read the guide.** [REVIEWING.md](REVIEWING.md) explains how reviewing works from start to finish. It is written for linguists and teachers as well as developers.
 
-Every submission is read by a person before it goes anywhere, then joins the open evidence: the
-**[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face,
-every candidate rendering and every endorsement ever offered, openly licensed (CC BY 4.0),
-contributors identified only by opaque ids. Endorsements accumulate; when a language crosses a
-promotion gate (reviewed by native speakers, or ratified official by a convened session) the pack
-re-releases with the community's words. Your dissent stays in the record and keeps working for you:
-we collect **options**, not winners.
+## What happens to your contribution
+
+1. A maintainer reads every submission before it is shown to anyone else.
+2. Once it is cleared, your word is added to the **[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face. The corpus holds every word anyone has offered for a term and every endorsement it has received. It is openly licensed (CC BY 4.0), and contributors appear in it only as opaque ids.
+3. Reviewers who speak the language endorse the words they would teach.
+4. When a language has enough review, its pack is released again with the community's words.
+
+Every word offered is kept as an option, including the ones that are not chosen for a pack.
+
+You can read the corpus yourself:
 
 ```python
 from datasets import load_dataset
 options = load_dataset("legesher/language-corpus", "options")
 ```
 
-The shipped packs are published alongside the corpus as the
-[language-packs dataset](https://huggingface.co/datasets/legesher/language-packs); the engine that
-reads them is released separately. This repository is where the community's evidence comes in.
+The packs that ship are published as the [language-packs dataset](https://huggingface.co/datasets/legesher/language-packs). The engine that reads them is released separately.
 
-## The ground rules, briefly
+## Guidelines
 
-- [Community Guidelines](COMMUNITY_GUIDELINES.md): the shared corpus and how disagreement works.
-- [Reviewing guide](REVIEWING.md): what reviewing looks like, who can review, how packs promote.
-- [AI-Assisted Contributions](AI_CONTRIBUTIONS.md): welcome, declared, zero machine weight at the gates.
-- [Your contributions and your data](CONTRIBUTOR_PRIVACY.md): credit is opt-in, withdrawal is real, and the limits are stated plainly.
-- [Code of Conduct](CODE_OF_CONDUCT.md): how we treat each other, in every language.
+- [Contributing](CONTRIBUTING.md): the ways to contribute and what to expect.
+- [Reviewing guide](REVIEWING.md): how reviewing works, who can review, and how a pack moves from experimental to official.
+- [Community Guidelines](COMMUNITY_GUIDELINES.md): how we work together on a shared corpus, and how disagreement is handled.
+- [AI-Assisted Contributions](AI_CONTRIBUTIONS.md): AI-assisted work is welcome when you say so, and people make the final decisions.
+- [Your contributions and your data](CONTRIBUTOR_PRIVACY.md): how you are credited, what is published, and how to withdraw.
+- [Code of Conduct](CODE_OF_CONDUCT.md): how we treat each other.
 
-**We never ask for your email on a public form.** Contact travels a private channel:
-<contribute@legesher.com>.
+We never ask for your email on a public form. To reach us privately, write to <contribute@legesher.com>.
 
-## The first era, honored
+## History
 
-Before the corpus existed, 149 contributors built Legesher's translation infrastructure in this
-repository: locale files, review discussions, the proof that communities would do this work. That
-era is preserved exactly as it was at the tag
-[`v1-archive`](https://github.com/legesher/legesher-translations/releases/tag/v1-archive), its
-words and review signal live on inside the corpus, and its people are credited in
-[CONTRIBUTORS.md](CONTRIBUTORS.md) and below, permanently.
+This repository began as Legesher Translations. Before the corpus existed, 149 contributors built Legesher's first locale files and review discussions here, and showed that language communities would do this work. Thank you. That version of the repository is preserved at the tag [`v1-archive`](https://github.com/legesher/legesher-translations/releases/tag/v1-archive). Its words and review history are part of the corpus, and everyone who contributed is credited in [CONTRIBUTORS.md](CONTRIBUTORS.md) and below.
 
 ## License
 
-Repository content is [MIT](LICENSE.md), as it has been since the first era. Contributions to the
-corpus publish under CC BY 4.0 per the [contributor notice](CONTRIBUTOR_PRIVACY.md); the shipped
-language packs carry their own licensing in the projects that release them.
+This repository is licensed under the [MIT License](LICENSE.md).
 
-## The community
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)),
 whose full roster lives in [CONTRIBUTORS.md](CONTRIBUTORS.md):

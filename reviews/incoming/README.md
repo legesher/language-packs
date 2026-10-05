@@ -1,21 +1,20 @@
-# Review bundles, incoming
+# Incoming review bundles
 
-This is the landing lane for **review bundles**: one JSON file per review session, in the shape the
-bundle schema defines (it ships with the `legesher-i18n` package). The
-[reviewer guide](../../REVIEWING.md#7-review-sessions-by-file-the-bundle-lane) explains the kit,
-the bundle, and the whole journey.
+Review bundles are submitted to this folder. A bundle is one JSON file for one review session, in
+the format the bundle schema defines (the schema ships with the `legesher-i18n` package). The
+[reviewing guide](../../REVIEWING.md#7-reviewing-by-file) explains how to create one.
 
-How the lane works:
+## How to submit a bundle
 
 1. Add your bundle at `reviews/incoming/<your-language>/<anything>.json` and open a pull request.
-2. Checks annotate the PR with schema and mechanical results. (While the checks are being wired,
-   a maintainer runs the same validation by hand. The result is the same, a little slower.)
-3. A maintainer does the human screen, and **merging means your evidence is accepted**: it enters
-   the same import, screening, and corpus path as every other lane.
+2. Checks report schema and validation results on the pull request. While the checks are being set
+   up, a maintainer runs the same validation by hand, which takes a little longer.
+3. A maintainer reviews the bundle. When the pull request is merged, your review is accepted and
+   goes through the same import, screening, and corpus steps as every other contribution.
 
-Two rules protect everyone:
+## Rules
 
-- **A bundle is a public artifact.** No email address or private contact detail ever goes in one.
-  Contact travels <contribute@legesher.com>.
-- Merged bundles are the record of what was accepted; they are archived and imported, never edited
-  in place. A correction is a new session, not a rewrite.
+- **A bundle is public.** Never put an email address or private contact detail in one. To reach us
+  privately, write to <contribute@legesher.com>.
+- **Merged bundles are not edited.** They are the record of what was accepted. To correct a review,
+  submit a new session.

@@ -4,25 +4,21 @@ Legesher language packs let people write and read code in their heart language. 
 **experimental**: a machine proposed every word, and mechanical checks are all it has passed. A pack
 becomes something better only through review by people who actually speak the language.
 
-That review is what you are here to do, and it makes you an open-source contributor to Legesher,
-credited like any other.
+When you review a pack, you are an open-source contributor to Legesher, and you are credited like any other contributor.
 
-This guide is written for linguists, teachers, and careful readers as much as for developers. You do
-not need to know Python to review a Python pack. The suggestions here are suggestions: they describe
-what tends to work, not rules you can fail.
+This guide is written for linguists, teachers, and careful readers as well as developers. You do not need to know Python to review a Python pack. Everything here is a suggestion based on what tends to work.
 
-**Start here:**
+**Get started:**
 [sign up as a reviewer](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml),
 [offer a single word](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml), or
 [review a pack in bulk](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml).
 
 ---
 
-## 1. The idea: translate the concept, not the word
+## 1. How to choose a word
 
 Ask yourself: **if computer science had been born in your language, how would this concept be
-taught?** What would the textbook call it? We are not looking for the English word dressed in your
-script. We are looking for the word your language would have chosen on its own.
+taught?** What would the textbook call it? Localize the concept, not the English word. We are looking for the word your language would have chosen on its own.
 
 In practice:
 
@@ -30,37 +26,29 @@ In practice:
   zero* or *loop*, that word beats anything a model proposes. Tell us it is established. That is
   evidence.
 - **Coining is legitimate.** Many concepts (*deprecation*, *generator*) have no native term anywhere
-  yet. Proposing one is not cheating; it is how every language built its scientific vocabulary. We
+  yet. Proposing one is welcome. It is how every language built its scientific vocabulary. We
   follow the spirit of ISO 704: name the concept by its essential characteristics.
-- **Genuine loanwords are yours too.** If your language really says «كمبيوتر» or "computer", keeping
-  it is a native judgment, not a failure. Mark it as a loanword or cognate.
-- **Transliteration is labeled, not banned.** A sound-copy of the English word is usually a
-  translator's dodge, and our models are forbidden from proposing them. But if a phonetic borrowing
-  is genuinely what your community uses and prefers, you may submit or endorse it. Tag it
-  *transliteration* so the preference is visible and honest. If most reviewers of your language
+- **Genuine loanwords are yours too.** If your language really says «كمبيوتر» or "computer", keeping it is a valid choice for a native speaker to make. Mark it as a loanword or cognate.
+- **Transliteration is allowed when it is labeled.** A sound-copy of the English word is usually a shortcut, and our models are not allowed to propose one. But if a phonetic borrowing
+  is genuinely what your community uses and prefers, you may submit or endorse it. Tag it *transliteration* so the preference is visible. If most reviewers of your language
   prefer transliterated terms, that pattern becomes part of your language's recorded terminology
-  policy rather than something we pretend is not happening.
+  policy.
 - **Phrases get two answers.** For compound tokens (`elif` is "else if"), first agree how the *idea*
-  reads in full in your language, then how it contracts into a single token. Both matter: the
-  expansion teaches, the contraction ships.
+  reads in full in your language, then how it contracts into a single token. Both matter. The full phrase is what people learn from, and the short token is what ships.
 
-## 2. Coming from Crowdin or Weblate?
+## 2. If you have used Crowdin or Weblate
 
-Welcome. Most of your instincts transfer, and one changes.
+Welcome. Most of what you know carries over. One thing is different.
 
 **What is the same:** strings keyed to source concepts, review with definitions and context in view,
 credit for your work, a ladder of trust that weighs experienced reviewers more.
 
-**What changes:** platforms like Crowdin and Weblate converge every string to one source-of-truth
-translation, because a UI string must render one way. Legesher collects every translation offered as
-an option, because terminology is a judgment a community works out over time. There is no locked
-string here and therefore no translation conflict: offer your word, endorse the ones you would
-teach, rank them. The pack exports the current pick; your dissent stays in the record and keeps
-working for you.
+**What is different:** platforms like Crowdin and Weblate converge every string to one source-of-truth
+translation, because a UI string must render one way. Legesher keeps every word offered as an option, because terminology is something a community works out over time. No string is locked, so there are no conflicts to resolve. Offer your word, endorse the ones you would teach, and rank them. The pack uses the current pick, and the words that were not picked stay in the record.
 
-**The practical mapping:** suggest a translation → propose an option · vote → endorse and rank ·
+**How the terms map:** suggest a translation → propose an option · vote → endorse and rank ·
 translation memory → the options table, with provenance · proofread step → native review ·
-glossary lock → there is not one; a winner is a pick, not a lock.
+glossary lock → there is not one. The current pick can change.
 
 ## 3. What you can contribute
 
@@ -76,8 +64,7 @@ glossary lock → there is not one; a winner is a pick, not a lock.
 
 Beyond the chosen words, your comments are collected too: how you would explain a concept to a
 student, how words should be formed, notes on register. They go into the open terminology corpus
-with your credit preference honoured, and they outlive any single term. Nothing you write is wasted,
-including words that do not win.
+with your credit preference honoured, and they outlive any single term. Everything you write is kept, including words that are not picked.
 
 ## 4. Who can review
 
@@ -92,22 +79,21 @@ Anyone may submit. Endorsements are weighted by rung:
 | certified | credentialed engagements through the education work (see §10) | highest |
 | maintainer | Legesher maintainers | equal to certified. On what a word means in your language, a maintainer does not outrank a certified native speaker |
 
-Verification raises the *weight* of your voice, never the welcome. Claimed reviewers do full
+Verification changes how much your endorsement counts. It does not change whether you are welcome. Claimed reviewers do full
 reviews, and verification can come afterwards.
 
-One honest detail: each endorsement carries the rung you held **at the moment you made it**. That
+One detail to know: each endorsement carries the rung you held **at the moment you made it**. That
 snapshot is permanent evidence and is not silently rewritten when you level up. Your earlier work is
 never lost, but carrying your new weight will take a deliberate re-affirmation rather than happening
 retroactively; the review app will offer that in one step once it ships.
 
 ## 5. What reviewing looks like
 
-Today the path runs through GitHub issue forms, which is deliberate: it works on day one, needs no
-account beyond GitHub, and needs nothing installed. A richer review surface is being built on the
+Today reviewing happens through GitHub issue forms. They need only a GitHub account and nothing installed. A richer review surface is being built on the
 same store and the same rules, including one that does not assume you know git and works properly
-for right-to-left scripts. The GitHub path is the floor, not the ceiling.
+for right-to-left scripts. The forms are the starting point, and they will keep working.
 
-**Your word first, where we can.** The most valuable signal a corpus can hold is the word a fluent
+**We ask for your word first.** The most valuable signal a corpus can hold is the word a fluent
 speaker reaches for *before* seeing anyone else's answer. Once you have seen a machine's confident
 suggestion, you cannot un-see it. So the propose form asks for your rendering without showing you
 the current pick, and the review app will do the same for every term. The bulk review form is the
@@ -123,12 +109,11 @@ keeping.)
 
 **There are no downvotes.** Disagree by endorsing a better word, or by proposing one. A
 [flag](https://github.com/legesher/legesher-translations/issues/new?template=pack_feedback.yml) is reserved for real problems (harmful,
-wrong in meaning, wrong register, spam) and asks for a sentence of explanation. Flags go to a
-person, not to a score.
+wrong in meaning, wrong register, spam) and asks for a sentence of explanation. A person reads every flag. Flags do not change a score.
 
-**Partial reviews submit cleanly.** Thirty concepts reviewed well beat 180 rushed.
+**Partial reviews are welcome.** Thirty concepts reviewed carefully are worth more than 180 reviewed in a hurry.
 
-**Models review too, and their opinion is worth zero.** We use language models to propose candidates,
+**Models review too, and their reviews carry no weight.** We use language models to propose candidates,
 and we also let them review: ranking, annotating, flagging things worth a human's attention. Machine
 reviews are labeled as machine reviews everywhere they appear, and they carry **zero weight toward
 every gate below**. `Reviewed` means native speakers; a model can never be one of them. A model's
@@ -136,15 +121,14 @@ flag routes to a person and rejects nothing on its own.
 
 ## 6. Where your contribution goes
 
-The whole journey, plainly:
+Step by step:
 
 1. **You submit**: a form, or a review session by pull request (§7).
 2. **A person reads it.** Every submission is held until a maintainer has screened it (§12). Your
    issue will be **closed with a reply** naming exactly what landed. Closed means *recorded*, never
    rejected. A submission that cannot be cleared yet is either **held** (usually: waiting for a
    native reviewer of your language to exist) or **returned or rejected with the reason cited**. A
-   held submission stays out of sight until a reviewer can look at it. Time alone clears nothing,
-   and we would rather say that than pretend otherwise.
+   held submission stays out of sight until a reviewer can look at it. A held submission is not cleared by time passing. It needs a reviewer.
 3. **Cleared words join the corpus.** The evidence lives in
    [`legesher/language-corpus`](https://huggingface.co/datasets/legesher/language-corpus) on
    Hugging Face: every candidate rendering and every endorsement, under CC BY 4.0, with
@@ -157,11 +141,11 @@ The whole journey, plainly:
 
 4. **Endorsements accumulate; gates release.** Nothing you do edits a shipped pack directly. When a
    language crosses a gate (§9), the pick is re-cut from the evidence and a new pack version ships.
-   Your dissent (the words that did not win) stays in the corpus, still working for you.
+   The words that were not picked stay in the corpus.
 
-## 7. Review sessions by file (the bundle lane)
+## 7. Reviewing by file
 
-For a full session over many terms, the file lane beats forms: take the **review kit** for your
+For a full session over many terms, a file works better than the forms: take the **review kit** for your
 language (terms, candidates, and context, deliberately without anyone else's verdicts), record your
 endorsements, passes, flags, rankings, and your own renderings, and produce a **bundle**: a single
 JSON file in the shape the bundle schema defines (it ships with the `legesher-i18n` package). A
@@ -170,32 +154,30 @@ by script works today.
 
 Submit the bundle as a pull request into `reviews/incoming/<your-language>/`. Checks annotate the
 PR with schema and mechanical results; a maintainer does the human screen; **merging means your
-evidence is accepted** and enters the same import, screening, and corpus path as every other lane.
+evidence is accepted** and goes through the same import, screening, and corpus steps as every other contribution.
 Until the incoming directory and its checks are live, attach the bundle file to a
 [bulk review issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml)
-instead: same contract, same destination.
+instead. It is handled the same way.
 
-One rule protects everyone: **a bundle is a public artifact.** No email address or private contact
-detail ever goes in one. Contact travels the private channel (§11).
+One rule: **a bundle is public.** Never put an email address or private contact detail in one. To reach us privately, see §11.
 
-## 8. What blocks a submission, and what never does
+## 8. What blocks a submission
 
-Blocking, and only these:
+Only these block a submission:
 
-- **Identifier physics.** Terms must be valid identifiers: no spaces or punctuation, stable under
+- **Valid identifiers.** Terms must be valid identifiers: no spaces or punctuation, stable under
   Unicode NFKC normalization, consistent script, no invisible characters. A failing term is kept as
   evidence but cannot ship.
-- **Round-trip.** Two different English concepts cannot share one translated word within your
-  language, because code must translate back losslessly.
+- **Round-trip.** Two different concepts cannot share one word within your language, because code has to convert back to its original form without loss.
 - **Placeholders.** In the messages track, `{name}`-style placeholders must survive, though you may
   reorder them.
 - **Conduct.** Submissions pass the [Code of Conduct](CODE_OF_CONDUCT.md), including its
   language-and-accessibility provisions. Harassment, slurs, or personal information in comments
   return or reject a submission.
 
-Explicitly **not** gates:
+These never block a submission:
 
-- **Disagreeing with a model.** Model output is material, not authority. Multilingual models
+- **Disagreeing with a model.** Model output is a starting point. It has no authority. Multilingual models
   underperform in exactly the languages we care most about, and your judgment is the point of this
   process.
 - **Novel coinages.** A word nobody proposed before routes to more human review, never to machine
@@ -206,31 +188,25 @@ Explicitly **not** gates:
 
 | status | meaning | criteria |
 | --- | --- | --- |
-| **experimental** | ships now, honestly labeled | mechanical gates pass; no native review required, because review is iterative and never blocks availability |
+| **experimental** | ships now, labeled experimental | mechanical gates pass; no native review required, because review is iterative and never blocks availability |
 | **reviewed** | native speakers have signed off | at least 2 native endorsements on each covered term, across at least 80% of the surface; no open flags |
 | **official** | the certified tier | every term carries at least 10 reviews, and the shipped pick holds a majority of reviewers' first-choice rankings; style profile ratified; zero open flags; and a convened session of the language's reviewers ratifies the pack |
 
 Each reviewer's top-ranked option counts as their one vote for a term, so "majority" always has a
 plain denominator: the people who reviewed it. These criteria are arithmetic over the public corpus:
-every endorsement they count is published, so the numbers can be recomputed and checked, never taken
-on faith. A status page that does the arithmetic for you is planned.
+every endorsement they count is published, so anyone can recompute and check the numbers. A status page that does the arithmetic for you is planned.
 
-The ten reviews are open to **any screened reviewer**, not only verified natives. Verification is a
-bottleneck we refuse to put in front of participation, so the native bar sits where the promoting
-act actually happens.
+The ten reviews are open to **any screened reviewer**, not only verified natives. We do not want verification to slow participation, so the requirement for verified native speakers applies at the ratification session.
 
-**Reaching the numbers does not promote a pack. A meeting does.** Official status is conferred in a
+**A pack becomes official in a meeting.** Reaching the numbers makes a pack eligible. Official status is conferred in a
 convened ratification session of the language's reviewers, which reads the evidence, can override
 the computed majority for reasons it records, and is valid only with a quorum of verified native
 speakers present: at least three of them, or a majority of those attending, whichever is greater.
-The arithmetic decides when a pack is *eligible*. People decide whether it is ready.
+The numbers decide when a pack is *eligible*. The session decides whether it is ready.
 
-One honest consequence: a language community that cannot yet field ten reviewers cannot reach
+One consequence: a language community that cannot yet field ten reviewers cannot reach
 official. That is intentional. There is no scaled-down threshold and no maintainer override, because
-`official` is a claim made to strangers choosing a curriculum or adopting a vocabulary, and it has
-to mean the same thing in every language or it means nothing in any of them. A pack sits at
-`reviewed`, fully usable and honestly labeled, until its community exists at that depth. The gate is
-not a judgment of the language; it describes how many people have stood behind the pack.
+`official` is a claim made to strangers choosing a curriculum or adopting a vocabulary, and it has to mean the same thing in every language. A pack stays at `reviewed`, fully usable and labeled as such, until its community reaches that size. The requirement is about how many people have reviewed the pack. It is not a judgment of the language.
 
 Packs can move down as well as up: a verified defect returns a term to experimental until
 re-reviewed. Nothing is deleted. Every submitted word and comment remains part of the record, and
@@ -238,7 +214,7 @@ your identity remains withdrawable (§11).
 
 ## 10. Recognition
 
-- **Credit, your way.** With every submission you choose how public credit reads: **anonymous** (an
+- **Credit.** With every submission you choose how public credit reads: **anonymous** (an
   opaque contributor id, and the default), **your handle**, or **a display name you give us**.
   Whatever you pick appears, or does not, wherever contributors are credited. You can change the
   choice later by asking. Your endorsements count identically in every case.
@@ -246,10 +222,9 @@ your identity remains withdrawable (§11).
   recorded as such, permanently.
 - **Reach.** Concept-keyed review means your work ships across programming languages: a review of
   `break` lands in every pack that has one.
-- **The paid lane, named honestly.** Reviewing here is volunteer open-source contribution. Legesher's
+- **Paid review work.** Reviewing here is volunteer open-source contribution. Legesher's
   education work will engage fair-wage reviewers for course-edition and accreditation projects, and
-  verified reviewers from this program are the natural candidates when those engagements exist. One
-  does not require the other, and volunteering does not price your language's expertise at zero.
+  verified reviewers from this program are the natural candidates when those engagements exist. One does not require the other, and volunteering here does not mean your expertise has no value.
 
 ## 11. Licensing, attribution, and your data
 
@@ -271,7 +246,7 @@ your identity remains withdrawable (§11).
   may publish analyses of it. Your identity and private session details are never part of that.
 - **Published dataset versions are permanent.** Withdrawal removes your identity everywhere and stops
   your words appearing in *future* releases, but versions already published and downloaded cannot be
-  recalled. We say this plainly because append-only honesty cuts both ways.
+  recalled. We want you to know this before you contribute.
 
 The full account is in [Your contributions and your data](CONTRIBUTOR_PRIVACY.md), the notice
 each submission asks you to agree to. It is versioned, and the version you agreed to is recorded
@@ -285,9 +260,7 @@ until a maintainer has looked at it: mechanical validators run first, and then a
 rendering itself before it becomes visible to other reviewers or exported to the corpus. The queue
 is walked weekly at minimum while volume is low.
 
-We would rather tell you a human does this than imply an algorithm does it instantly. An automated
-screening gate is being built, and when it ships this guide will say so; the honest version today is
-that the maintainer is the screen.
+An automated screening step is being built, and this guide will say so when it ships. Today a maintainer does the screening.
 
 Flags and conduct screens are resolved by maintainers, recorded append-only, with the resolution
 visible on the option. A returned submission tells you exactly why and how to fix it; a rejected one
@@ -301,5 +274,4 @@ cites the guideline. Appeals follow the [Code of Conduct](CODE_OF_CONDUCT.md)'s 
 - **Everything else**:
   [GitHub Discussions](https://github.com/legesher/legesher-translations/discussions)
 
-If something here reads as unclear or unkind, tell us. These guidelines are meant to be lived with,
-not worked around.
+If something here reads as unclear or unkind, please tell us.

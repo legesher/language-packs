@@ -6,7 +6,7 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thank you for offering a word. Every translation anyone offers is kept as an **option** in the
+      Thank you for offering a word. Every word anyone offers is kept as an **option** in the
       shared corpus, alongside every other option for the same term. You are not competing with the
       word a pack ships today and you are not editing it: you are adding evidence.
 

@@ -1,34 +1,30 @@
 # Community Guidelines
 
-How we build together. This document sits alongside the [Code of Conduct](CODE_OF_CONDUCT.md): the
+These guidelines describe how we work together. This document sits alongside the [Code of Conduct](CODE_OF_CONDUCT.md): the
 Code of Conduct covers how we treat each other, and these guidelines cover how we work on a shared
-corpus of programming terminology without stepping on each other.
+corpus of programming terminology without getting in each other's way.
 
 If you only read one section, read the next one.
 
-## The shared corpus, and how disagreement works
+## The shared corpus and disagreement
 
-Legesher collects every translation offered for every term as an option in a shared database. A
+Legesher keeps every word offered for every term as an option in a shared database. A
 language pack is an export: the current best pick for each concept, chosen from the options that
-exist so far. Most translation platforms converge on one locked string per term; we deliberately do
-not. The options are the point. They are how a community works out, in the open, what its language
-wants to call a concept.
+exist so far. Most localization platforms settle on one locked string per term. We keep the options instead, because they are how a community works out, in the open, what its language calls a concept.
 
-That design carries a social contract:
+This is what we ask of each other:
 
-- **Propose options; don't edit winners.** If a pack ships a word you would never use, the move is
+- **Propose options.** If a pack ships a word you would never use, the move is
   to offer your word and endorse the ones you agree with, not to overwrite the current pick. Your
-  alternative is always a welcome contribution. It is never a conflict with a locked string, because
-  nothing is locked.
-- **A pick is a snapshot, not a verdict.** Today's export reflects today's endorsements. When better
-  options arrive and native reviewers endorse them, the pick moves. Losing a round says nothing
-  about the value of the word you offered.
-- **Nothing is wasted.** Options that don't win stay in the corpus with their provenance and their
+  alternative is always a welcome contribution. Nothing is locked, so there is no conflict to resolve.
+- **The current pick can change.** Today's export reflects today's endorsements. When better
+  options arrive and native reviewers endorse them, the pick moves. A word that is not picked today is still a valued contribution.
+- **Every option is kept.** Options that are not picked stay in the corpus with their provenance and their
   endorsements. They inform style profiles, research, and future picks. The record is append-only
   on purpose. (Losing a ranking and failing moderation are different things: a submission the
   screen rejects for conduct or mechanical validity, with the reason cited, stays in the record
   but out of every export. Rankings never reject anything.)
-- **Established beats invented, and coining is legitimate.** If your community's classrooms already
+- **Established words come first, and new words are welcome.** If your community's classrooms already
   have a word for a concept, that word carries the strongest claim. Where no native term exists
   anywhere, proposing one is how every language has always built its scientific vocabulary. Both
   are contributions; say which one you are making.
@@ -68,11 +64,10 @@ When something is flagged, whether by the screening gate or by a person:
 Moderation exists to keep the corpus trustworthy, and it is deliberately narrow: mechanical validity
 and conduct are the only things that block. Creative disagreement is never a moderation matter.
 
-## Style guides are suggestions
+## Style guides
 
 Each language accumulates a style profile: how compound words join, what stands in for uppercase
-where a script has no case, how numerals read, what register docstrings take. These profiles guide
-writers and tools, and they are always suggestions, never laws. A style profile describes how a
+where a script has no case, how numerals read, what register docstrings take. These profiles guide writers and tools. They are suggestions. A style profile describes how a
 language community tends to write; it does not gatekeep what an individual is allowed to write.
 
 ## Where conversations happen
@@ -83,5 +78,4 @@ language community tends to write; it does not gatekeep what an individual is al
 - **Reviewer coordination** runs by email today: <contribute@legesher.com>, mentioning your
   language. Per-language channels come as native-review activity grows.
 
-Thank you for being here. The community that forms around a language pack is the thing that makes
-it real.
+Thank you for being here. A language pack is only as good as the community that forms around it.
