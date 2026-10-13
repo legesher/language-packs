@@ -75,4 +75,4 @@ you contribute (credit, withdrawal, publication) is covered by
 - Sign-off is always human; machine reviews carry zero gate weight.
 
 Questions about any of this belong in
-[GitHub Discussions](https://github.com/legesher/legesher-translations/discussions). If a rule here reads as unclear or unkind, please tell us.
+[GitHub Discussions](https://github.com/legesher/language-packs/discussions). If a rule here reads as unclear or unkind, please tell us.

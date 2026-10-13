@@ -9,9 +9,9 @@ When you review a pack, you are an open-source contributor to Legesher, and you 
 This guide is written for linguists, teachers, and careful readers as well as developers. You do not need to know Python to review a Python pack. Everything here is a suggestion based on what tends to work.
 
 **Get started:**
-[sign up as a reviewer](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml),
-[offer a single word](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml), or
-[review a pack in bulk](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml).
+[sign up as a reviewer](https://github.com/legesher/language-packs/issues/new?template=reviewer_signup.yml),
+[offer a single word](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml), or
+[review a pack in bulk](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml).
 
 ---
 
@@ -108,7 +108,7 @@ a word is always allowed and means "no opinion". It is never held against the wo
 keeping.)
 
 **There are no downvotes.** Disagree by endorsing a better word, or by proposing one. A
-[flag](https://github.com/legesher/legesher-translations/issues/new?template=pack_feedback.yml) is reserved for real problems (harmful,
+[flag](https://github.com/legesher/language-packs/issues/new?template=pack_feedback.yml) is reserved for real problems (harmful,
 wrong in meaning, wrong register, spam) and asks for a sentence of explanation. A person reads every flag. Flags do not change a score.
 
 **Partial reviews are welcome.** Thirty concepts reviewed carefully are worth more than 180 reviewed in a hurry.
@@ -156,7 +156,7 @@ Submit the bundle as a pull request into `reviews/incoming/<your-language>/`. Ch
 PR with schema and mechanical results; a maintainer does the human screen; **merging means your
 evidence is accepted** and goes through the same import, screening, and corpus steps as every other contribution.
 Until the incoming directory and its checks are live, attach the bundle file to a
-[bulk review issue](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml)
+[bulk review issue](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml)
 instead. It is handled the same way.
 
 One rule: **a bundle is public.** Never put an email address or private contact detail in one. To reach us privately, see §11.
@@ -272,6 +272,6 @@ cites the guideline. Appeals follow the [Code of Conduct](CODE_OF_CONDUCT.md)'s 
 - **Privacy, credit, or withdrawal**: <privacy@legesher.com>
 - **Conduct**: <conduct@legesher.com>
 - **Everything else**:
-  [GitHub Discussions](https://github.com/legesher/legesher-translations/discussions)
+  [GitHub Discussions](https://github.com/legesher/language-packs/discussions)
 
 If something here reads as unclear or unkind, please tell us.

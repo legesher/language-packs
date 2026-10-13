@@ -5,7 +5,7 @@ Every human who contributed to **legesher-translations** before it was archived 
 **Related:**
 - Active translation work now runs through this repository's forms and review lanes; the living data is the public [language corpus](https://huggingface.co/datasets/legesher/language-corpus) and [language-packs](https://huggingface.co/datasets/legesher/language-packs) datasets named in [README.md](README.md)
 - Full community review discussions for Spanish and German preserved in [`docs/review-history/`](docs/review-history/)
-- All contributor commits preserved in `main`'s ancestry via merge-ours commits (see [PR #322](https://github.com/legesher/legesher-translations/pull/322))
+- All contributor commits preserved in `main`'s ancestry via merge-ours commits (see [PR #322](https://github.com/legesher/language-packs/pull/322))
 
 ### How we mapped commits to GitHub accounts
 

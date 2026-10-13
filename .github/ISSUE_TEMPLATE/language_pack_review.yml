@@ -13,9 +13,9 @@ body:
       Two neighbouring forms, so you land in the right one:
 
       - One word for one term, with your reasoning:
-        [Propose a Translation Option](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml)
+        [Propose a Translation Option](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml)
       - A word that is harmful, wrong in meaning, or mis-registered:
-        [Pack Feedback or Term Flag](https://github.com/legesher/legesher-translations/issues/new?template=pack_feedback.yml)
+        [Pack Feedback or Term Flag](https://github.com/legesher/language-packs/issues/new?template=pack_feedback.yml)
 
       One thing worth knowing about this lane: you see the shipped word before you write your own,
       so your answers are recorded as *responses to candidates* rather than as an unprompted first
@@ -23,7 +23,7 @@ body:
       before seeing any suggestion is the signal hardest to get and easiest to lose. If you would
       rather offer a word without seeing the current one first, use the propose form.
 
-      The [reviewer guide](https://github.com/legesher/legesher-translations/blob/main/REVIEWING.md) explains how these reviews add up
+      The [reviewer guide](https://github.com/legesher/language-packs/blob/main/REVIEWING.md) explains how these reviews add up
       to a pack becoming `reviewed` and then `official`.
 
       **A person reads this before it goes anywhere.** New submissions are screened by a maintainer
@@ -205,9 +205,9 @@ body:
   attributes:
     label: Consent
     options:
-    - label: I have read [Your contributions and your data](https://github.com/legesher/legesher-translations/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
+    - label: I have read [Your contributions and your data](https://github.com/legesher/language-packs/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
       required: true
-    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/legesher-translations/blob/main/CODE_OF_CONDUCT.md)
+    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/language-packs/blob/main/CODE_OF_CONDUCT.md)
       required: true
 
 - type: markdown

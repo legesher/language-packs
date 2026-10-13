@@ -11,11 +11,11 @@ body:
       word a pack ships today and you are not editing it: you are adding evidence.
 
       One form, one term. If you have words for twenty terms, the
-      [pack review form](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml) takes them in one go.
+      [pack review form](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml) takes them in one go.
 
-      **Before you submit:** [Your contributions and your data](https://github.com/legesher/legesher-translations/blob/main/CONTRIBUTOR_PRIVACY.md)
+      **Before you submit:** [Your contributions and your data](https://github.com/legesher/language-packs/blob/main/CONTRIBUTOR_PRIVACY.md)
       is short and covers what happens to your word, how you are identified (you are not, unless you
-      ask to be), and how to withdraw. The [reviewer guide](https://github.com/legesher/legesher-translations/blob/main/REVIEWING.md)
+      ask to be), and how to withdraw. The [reviewer guide](https://github.com/legesher/language-packs/blob/main/REVIEWING.md)
       explains how options become the word a pack ships.
 
       **A person reads this before it goes anywhere.** New submissions are screened by a maintainer
@@ -165,7 +165,7 @@ body:
     label: Did an AI assistant help you with this word?
     description: |
       Both answers are fine. We record how a word was produced so the corpus stays honest about its
-      own provenance. See [AI-Assisted Contributions](https://github.com/legesher/legesher-translations/blob/main/AI_CONTRIBUTIONS.md).
+      own provenance. See [AI-Assisted Contributions](https://github.com/legesher/language-packs/blob/main/AI_CONTRIBUTIONS.md).
     options:
     - No, this is my own rendering
     - Yes, an assistant suggested or helped shape it
@@ -208,9 +208,9 @@ body:
   attributes:
     label: Consent
     options:
-    - label: I have read [Your contributions and your data](https://github.com/legesher/legesher-translations/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
+    - label: I have read [Your contributions and your data](https://github.com/legesher/language-packs/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
       required: true
-    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/legesher-translations/blob/main/CODE_OF_CONDUCT.md)
+    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/language-packs/blob/main/CODE_OF_CONDUCT.md)
       required: true
 
 - type: markdown

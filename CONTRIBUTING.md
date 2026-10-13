@@ -6,18 +6,18 @@ to go deeper too.
 
 ## Ways to contribute
 
-1. **Share a word.** Use the [propose form](https://github.com/legesher/legesher-translations/issues/new?template=propose_translation.yml)
+1. **Share a word.** Use the [propose form](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml)
    to offer your word for one term and tell us why you chose it. All you need is a GitHub account.
 2. **Review many terms at once.** The
-   [bulk review form](https://github.com/legesher/legesher-translations/issues/new?template=language_pack_review.yml)
+   [bulk review form](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml)
    takes many terms in one issue.
 3. **Review by file.** For a full review session, create a review bundle and submit it as a pull
    request. The [reviewing guide](REVIEWING.md#7-reviewing-by-file) explains how.
 4. **Sign up as a reviewer.** The
-   [signup form](https://github.com/legesher/legesher-translations/issues/new?template=reviewer_signup.yml)
+   [signup form](https://github.com/legesher/language-packs/issues/new?template=reviewer_signup.yml)
    asks for your language and how you would like to be credited.
 5. **Flag a term.** Use the
-   [feedback form](https://github.com/legesher/legesher-translations/issues/new?template=pack_feedback.yml)
+   [feedback form](https://github.com/legesher/language-packs/issues/new?template=pack_feedback.yml)
    when a term is harmful, wrong in meaning, in the wrong register, or spam.
 
 If you are new, start with the [reviewing guide](REVIEWING.md). It explains the whole process, from

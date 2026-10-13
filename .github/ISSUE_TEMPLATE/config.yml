@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
 - name: GitHub Discussions
-  url: https://github.com/legesher/legesher-translations/discussions
+  url: https://github.com/legesher/language-packs/discussions
   about: Ask questions and discuss ideas with the community
 - name: Documentation
   url: https://docs.legesher.io

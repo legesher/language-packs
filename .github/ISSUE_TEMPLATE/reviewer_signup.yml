@@ -11,7 +11,7 @@ body:
       anything: reviewers work at whatever pace suits them, and a partial review is a real
       contribution.
 
-      The [reviewer guide](https://github.com/legesher/legesher-translations/blob/main/REVIEWING.md) explains what reviewing involves,
+      The [reviewer guide](https://github.com/legesher/language-packs/blob/main/REVIEWING.md) explains what reviewing involves,
       what makes a pack `reviewed` and then `official`, and what we ask of you. Reading it first is
       worth the ten minutes, though nothing here depends on having read it.
 
@@ -172,9 +172,9 @@ body:
   attributes:
     label: Consent
     options:
-    - label: I have read [Your contributions and your data](https://github.com/legesher/legesher-translations/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
+    - label: I have read [Your contributions and your data](https://github.com/legesher/language-packs/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
       required: true
-    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/legesher-translations/blob/main/CODE_OF_CONDUCT.md)
+    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/language-packs/blob/main/CODE_OF_CONDUCT.md)
       required: true
 
 - type: markdown
