@@ -260,7 +260,8 @@ until a maintainer has looked at it: mechanical validators run first, and then a
 rendering itself before it becomes visible to other reviewers or exported to the corpus. There is
 one maintainer today, so the queue moves as capacity allows, and you will always get a reply.
 
-An automated screening step is being built, and this guide will say so when it ships. Today a maintainer does the screening.
+Automated checks catch what a machine can catch (invalid identifiers, invisible and confusable
+characters). The judgment on the word itself is a person's, and nothing clears without one.
 
 Flags and conduct screens are resolved by maintainers, recorded append-only, with the resolution
 visible on the option. A returned submission tells you exactly why and how to fix it; a rejected one

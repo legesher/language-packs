@@ -36,8 +36,9 @@ unusable in a room full of students do not ship, in any language.
 
 How that is enforced, in order:
 
-1. **A maintainer screens every submission before it is visible.** Automated screening does not
-   exist yet, and until it does the screen is a person reading each new word. Your contribution is
+1. **A maintainer screens every submission before it is visible.** Automated checks run first
+   (identifier validity, script consistency, invisible and confusable characters), and then a
+   person reads each new word. Your contribution is
    recorded on arrival and is held back from rankings and from the published corpus until it has
    been read and cleared. There is one maintainer today, so the queue moves as capacity allows.
    Being held is not a punishment and never removes your contribution from the record; it means it
