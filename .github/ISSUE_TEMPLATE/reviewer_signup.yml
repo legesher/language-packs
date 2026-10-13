@@ -7,9 +7,9 @@ body:
   attributes:
     value: |
       Reviewing is how a language pack stops being a machine's guesses and starts being a
-      community's decisions. You do not need to be a programmer, and you do not need to commit to
-      anything: reviewers work at whatever pace suits them, and a partial review is a real
-      contribution.
+      community's decisions about its heart language. You do not need to be a programmer, and you
+      do not need to commit to anything: reviewers work at whatever pace suits them, and a partial
+      review is a real contribution.
 
       The [reviewer guide](https://github.com/legesher/language-packs/blob/main/REVIEWING.md) explains what reviewing involves,
       what makes a pack `reviewed` and then `official`, and what we ask of you. Reading it first is

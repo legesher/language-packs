@@ -2,7 +2,7 @@
 
 <h1 align="center">Legesher Language Packs</h1>
 <blockquote align="center">What if the foundation of programming was in your language? ✏️💻</blockquote>
-<p align="center">This repository is where the language community shapes the language used to express programming and has the opportunity for their voice to be heard. This is the contribution home for Legesher's language work, and your contribution will influence the vocabulary used to depict concepts as if first written for the native speaker instead of solely through the perspective of a native English speaker.</p>
+<p align="center">This repository is where the language community shapes the language used to express programming and has the opportunity for their voice to be heard. This is the contribution home for Legesher's language work, and your contribution will influence the vocabulary used to depict concepts as if first written in your heart language instead of solely through the perspective of a native English speaker.</p>
 
 <p align="center">
     <a href="http://makeapullrequest.com">

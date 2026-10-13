@@ -1,8 +1,8 @@
 # Contributing
 
-Thank you for being here. This repository is where Legesher's language packs are localized, and you
-can contribute without knowing how to code or how to use git. If you are a developer, there are ways
-to go deeper too.
+Thank you for being here. This repository is where Legesher's language packs are localized into
+your heart language, and you can contribute without knowing how to code or how to use git. If you
+are a developer, there are ways to go deeper too.
 
 ## Ways to contribute
 
