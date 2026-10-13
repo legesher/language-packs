@@ -257,8 +257,8 @@ applying to you retroactively.
 
 **A person reads your submission before it goes anywhere.** Everything a stranger submits is held
 until a maintainer has looked at it: mechanical validators run first, and then a human judges the
-rendering itself before it becomes visible to other reviewers or exported to the corpus. The queue
-is walked weekly at minimum while volume is low.
+rendering itself before it becomes visible to other reviewers or exported to the corpus. There is
+one maintainer today, so the queue moves as capacity allows, and you will always get a reply.
 
 An automated screening step is being built, and this guide will say so when it ships. Today a maintainer does the screening.
 

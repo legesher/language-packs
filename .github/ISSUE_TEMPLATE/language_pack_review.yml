@@ -27,8 +27,8 @@ body:
       to a pack becoming `reviewed` and then `official`.
 
       **A person reads this before it goes anywhere.** New submissions are screened by a maintainer
-      before they become visible to other reviewers or exported to the public corpus, weekly at
-      minimum while volume is low.
+      before they become visible to other reviewers or exported to the public corpus. There is one
+      maintainer today, so the queue moves as capacity allows, and you will get a reply on this issue.
 
 - type: dropdown
   id: language

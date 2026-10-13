@@ -39,9 +39,9 @@ How that is enforced, in order:
 1. **A maintainer screens every submission before it is visible.** Automated screening does not
    exist yet, and until it does the screen is a person reading each new word. Your contribution is
    recorded on arrival and is held back from rankings and from the published corpus until it has
-   been read and cleared (the queue is walked weekly at minimum while volume is low). Being held is
-   not a punishment and never removes your contribution from the record; it means it has not been
-   read yet, or that it needs eyes the maintainer does not have.
+   been read and cleared. There is one maintainer today, so the queue moves as capacity allows.
+   Being held is not a punishment and never removes your contribution from the record; it means it
+   has not been read yet, or that it needs eyes the maintainer does not have.
 2. **Native reviewers judge in context.** Words carry weight machines cannot see, in both
    directions: a term that looks innocuous can be a regional slur, and a term that pattern-matches
    badly can be perfectly ordinary. The judgment call belongs to people who live in the language.

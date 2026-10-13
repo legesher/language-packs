@@ -19,8 +19,9 @@ body:
       explains how options become the word a pack ships.
 
       **A person reads this before it goes anywhere.** New submissions are screened by a maintainer
-      before they become visible to other reviewers or exported to the public corpus. The queue is
-      walked weekly at minimum. We would rather tell you a human does it than imply it is instant.
+      before they become visible to other reviewers or exported to the public corpus. There is one
+      maintainer today, so the queue moves as capacity allows, and you will get a reply on this
+      issue. We would rather tell you a human does it than imply it is instant.
 
 - type: input
   id: concept

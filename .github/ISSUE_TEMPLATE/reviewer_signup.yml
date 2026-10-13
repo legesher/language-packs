@@ -15,8 +15,8 @@ body:
       what makes a pack `reviewed` and then `official`, and what we ask of you. Reading it first is
       worth the ten minutes, though nothing here depends on having read it.
 
-      **A person reads this.** Signups are handled by a maintainer, weekly at minimum while volume
-      is low. You will get a reply on this issue.
+      **A person reads this.** Signups are handled by a maintainer. There is one maintainer today,
+      so signups move as capacity allows, and you will get a reply on this issue.
 
 - type: dropdown
   id: language

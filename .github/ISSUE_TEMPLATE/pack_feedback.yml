@@ -16,9 +16,10 @@ body:
       downvotes here on purpose: disagreement is expressed as evidence for an alternative, never as
       damage to a rival word. The [reviewer guide](https://github.com/legesher/language-packs/blob/main/REVIEWING.md) explains why.
 
-      **A person reads this**, weekly at minimum while volume is low. Flagging a word does not delete
-      it: it routes the word to native reviewers who can judge it in context, and the flag and its
-      resolution both stay on the record.
+      **A person reads this.** There is one maintainer today, so flags move as capacity allows, and
+      you will get a reply on this issue. Flagging a word does not delete it: it routes the word to
+      native reviewers who can judge it in context, and the flag and its resolution both stay on the
+      record.
 
 - type: dropdown
   id: language
