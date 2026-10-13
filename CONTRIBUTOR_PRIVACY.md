@@ -134,8 +134,8 @@ marker and record your consent afresh. It never happens automatically.
 
 Any of these reaches a person:
 
-- **Privacy, credit, or withdrawal requests**: <privacy@legesher.com>
-- **Anything about contributing**: <contribute@legesher.com>
+- **Privacy, credit, or withdrawal requests**: <help@legesher.com>
+- **Anything about contributing**: <hello@legesher.com>
 - **General discussion**:
   [GitHub Discussions](https://github.com/legesher/language-packs/discussions)
 

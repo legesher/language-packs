@@ -237,7 +237,7 @@ your identity remains withdrawable (§11).
   one. Your identity details are never part of the published dataset, and you may withdraw at any
   time: counts survive, your personal data does not.
 - **We never ask for your email on a public form.** GitHub issues are public, so contact details
-  travel a private channel instead: write to <contribute@legesher.com> and mention your issue. An
+  travel a private channel instead: write to <hello@legesher.com> and mention your issue. An
   address given that way is stored privately alongside your identity, never in the repository, never
   in the dataset, and deleted with the rest of your identity if you withdraw.
 - Terms shown from other projects appear with attribution. Endorsing one records *your* independent
@@ -268,9 +268,9 @@ cites the guideline. Appeals follow the [Code of Conduct](CODE_OF_CONDUCT.md)'s 
 
 ## Questions
 
-- **Anything about contributing**: <contribute@legesher.com>
-- **Privacy, credit, or withdrawal**: <privacy@legesher.com>
-- **Conduct**: <conduct@legesher.com>
+- **Anything about contributing**: <hello@legesher.com>
+- **Privacy, credit, or withdrawal**: <help@legesher.com>
+- **Conduct**: <help@legesher.com>
 - **Everything else**:
   [GitHub Discussions](https://github.com/legesher/language-packs/discussions)
 

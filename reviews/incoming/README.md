@@ -15,6 +15,6 @@ the format the bundle schema defines (the schema ships with the `legesher-i18n` 
 ## Rules
 
 - **A bundle is public.** Never put an email address or private contact detail in one. To reach us
-  privately, write to <contribute@legesher.com>.
+  privately, write to <hello@legesher.com>.
 - **Merged bundles are not edited.** They are the record of what was accepted. To correct a review,
   submit a new session.
