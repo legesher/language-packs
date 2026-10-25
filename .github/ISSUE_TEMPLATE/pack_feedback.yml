@@ -1,0 +1,184 @@
+name: Pack Feedback or Term Flag
+description: Report a word that is harmful, wrong in meaning, badly mis-registered, or spam
+title: '[Flag]: TERM in LANGUAGE'
+labels: [contrib:localization, contrib:community]
+body:
+- type: markdown
+  attributes:
+    value: |
+      This form is for the small set of problems that are not disagreement: a word that is harmful,
+      wrong in meaning, in the wrong register for a classroom, or obvious spam. Flags go to a person,
+      not to a score. They are reports, and we treat them that way.
+
+      **If you simply think a different word is better, this is the wrong form** and there is nothing
+      to report. Offer your word instead through
+      [Propose a Translation Option](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml). There are no
+      downvotes here on purpose: disagreement is expressed as evidence for an alternative, never as
+      damage to a rival word. The [reviewer guide](https://github.com/legesher/language-packs/blob/main/REVIEWING.md) explains why.
+
+      **A person reads this.** There is one maintainer today, so flags move as capacity allows, and
+      you will get a reply on this issue. Flagging a word does not delete it: it routes the word to
+      native reviewers who can judge it in context, and the flag and its resolution both stay on the
+      record.
+
+- type: dropdown
+  id: language
+  attributes:
+    label: Language
+    options:
+    - Amharic (am)
+    - Arabic (ar)
+    - Bengali (bn)
+    - Bosnian (bs)
+    - Burmese (my)
+    - Catalan (ca)
+    - Chinese (zh)
+    - Croatian (hr)
+    - Czech (cs)
+    - Danish (da)
+    - Dutch (nl)
+    - English (en)
+    - Finnish (fi)
+    - French (fr)
+    - Galician (gl)
+    - German (de)
+    - Greek (el)
+    - Gujarati (gu)
+    - Hebrew (he)
+    - Hindi (hi)
+    - Hungarian (hu)
+    - Indonesian (id)
+    - Irish (ga)
+    - Italian (it)
+    - Japanese (ja)
+    - Kannada (kn)
+    - Korean (ko)
+    - Latvian (lv)
+    - Macedonian (mk)
+    - Malay (ms)
+    - Malayalam (ml)
+    - Mongolian (mn)
+    - Norwegian (no)
+    - Persian (fa)
+    - Polish (pl)
+    - Portuguese (pt)
+    - Romanian (ro)
+    - Russian (ru)
+    - Scottish Gaelic (gd)
+    - Serbian (sr)
+    - Sinhala (si)
+    - Spanish (es)
+    - Sundanese (su)
+    - Swedish (sv)
+    - Telugu (te)
+    - Thai (th)
+    - Turkish (tr)
+    - Urdu (ur)
+    - Uzbek (uz)
+    - Vietnamese (vi)
+    - Welsh (cy)
+    - Other (no pack yet)
+  validations:
+    required: true
+
+- type: input
+  id: other_language
+  attributes:
+    label: Your language, if you chose Other
+    description: |
+      Name it and, if you know it, include its BCP 47 code so we register it correctly. A language
+      with no pack yet is a welcome submission, not an edge case.
+    placeholder: e.g., Tigrinya (ti)
+
+- type: input
+  id: concept
+  attributes:
+    label: The English term
+    description: The keyword, builtin, or exception the flagged word renders.
+    placeholder: e.g., def, while, ValueError, print
+  validations:
+    required: true
+
+- type: input
+  id: surface_form
+  attributes:
+    label: The word you are flagging
+    description: Copy it exactly as it appears in the pack.
+    placeholder: The translated word, exactly as written
+  validations:
+    required: true
+
+- type: dropdown
+  id: reason
+  attributes:
+    label: What is wrong with it
+    options:
+    - Harmful (a slur, sexualized, degrading, or unusable in a room full of students)
+    - Wrong meaning (it does not render this concept)
+    - Wrong register (understandable but inappropriate for the context this is read in)
+    - Spam or vandalism
+  validations:
+    required: true
+
+- type: textarea
+  id: note
+  attributes:
+    label: Tell us what you are seeing
+    description: |
+      A sentence or two is plenty. What does the word mean to a speaker, and to whom? Context a
+      person outside your language could not have is exactly what is useful here, and it is what
+      lets a maintainer route this well.
+    placeholder: |
+      e.g., In this variety the word is a common insult, so it would be read as a joke at the
+      student's expense rather than as a keyword.
+  validations:
+    required: true
+
+- type: dropdown
+  id: credit
+  attributes:
+    label: How would you like to be credited?
+    description: |
+      Anonymous is the default. Flags are handled the same either way, and who filed a flag is
+      never published.
+    options:
+    - Anonymous (default)
+    - My GitHub handle
+    - A display name I will give you
+  validations:
+    required: true
+
+- type: input
+  id: credit_text
+  attributes:
+    label: Your display name, if you chose one
+    description: |
+      Only used when you picked "A display name I will give you" above. If that is your choice and
+      this field is blank, we record you as anonymous until you give us the name (here or at
+      contribute@legesher.com, whichever you prefer).
+    placeholder: e.g., Dr. A. Translator
+
+- type: checkboxes
+  id: consent
+  attributes:
+    label: Consent
+    options:
+    - label: I have read [Your contributions and your data](https://github.com/legesher/language-packs/blob/main/CONTRIBUTOR_PRIVACY.md) (v1.0) and agree
+      required: true
+    - label: I agree to follow this project's [Code of Conduct](https://github.com/legesher/language-packs/blob/main/CODE_OF_CONDUCT.md)
+      required: true
+
+- type: markdown
+  attributes:
+    value: |
+      **Do not put an email address in this issue**, and please do not name or describe another
+      contributor here: flags are about words. GitHub issues are public. If the report is about a
+      person's conduct rather than a word, it belongs at <support@legesher.com>; if it involves your
+      own privacy or identity, write to <privacy@legesher.com>.
+
+- type: markdown
+  attributes:
+    value: |
+      **What happens next:** a maintainer reads this, then your issue is closed with a reply naming
+      exactly what landed. Closed means recorded, never rejected. A submission that needs more
+      eyes is held, and the reply says so.

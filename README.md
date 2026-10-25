@@ -1,173 +1,66 @@
-> ## ⚠️ This repository is changing
->
-> The original translation app and locale files here are **retired**. Legesher's translation work continued in the Legesher monorepo, private while it is prepared for public release. This repository's data lives in three Hugging Face datasets:
->
-> - **[language-corpus](https://huggingface.co/datasets/legesher/language-corpus)** — the evidence: every candidate translation anyone has offered and every endorsement a native speaker attached to it, openly licensed.
-> - **[language-canon](https://huggingface.co/datasets/legesher/language-canon)** — the decision: the rendering Legesher currently ships for each language, with how far each language has climbed the review ladder.
-> - **[language-packs](https://huggingface.co/datasets/legesher/language-packs)** — what ships: the packaged vocabulary a release actually carries, one pinned revision per release.
-> - **Contribute:** translation contributions are reopening **in this repository** — the contribution forms and reviewer guide land here next. Until then, questions are welcome in this repository's [Discussions](https://github.com/legesher/legesher-translations/discussions).
->
-> This repo also remains the historical record. The **[149 contributors](CONTRIBUTORS.md)** whose work established Legesher's translation infrastructure are credited here, and the full line-by-line community review discussions for Spanish and German are preserved in [`docs/review-history/`](docs/review-history/).
->
-> ---
+<img src="/assets/README-EggPeggy.png" align="center"/>
 
-<img src="/lib/images/README-EggPeggy.png" align="center"/>
+<h1 align="center">Legesher Language Packs</h1>
+<blockquote align="center">What if the foundation of programming was in your language? ✏️💻</blockquote>
+<p align="center">This repository is where the language community shapes the language used to express programming and has the opportunity for their voice to be heard. This is the contribution home for Legesher's language work, and your contribution will influence the vocabulary used to depict concepts as if first written in your heart language instead of solely through the perspective of a native English speaker.</p>
 
-<h1 align="center">Legesher Translations</h1>
-<blockquote align="center">Translation database for written languages ✏️ used in programming languages💻.  </blockquote>
-<p align="center">Programming with <b>Legesher</b>'s dev tools empowers any developer to create without losing the art of innovation 💡, creativity 🎨, or collaboration 🤝 in translation. </p>
-
-<!-- DEVELOPMENT BADGES -->
-<p align="center" style="margin-bottom: 5px; margin-top: 5px;">
-    <!-- <a href="https://travis-ci.com/legesher/legesher-translations/">
-        <img src="https://img.shields.io/travis/com/legesher/legesher-translations/?style=flat-square&labelColor=black&logo=travis&logoColor=white" alt="macOS Build Status"></a>
-    <a href="https://ci.appveyor.com/project/madiedgar/legesher-translations/">
-        <img src="https://img.shields.io/appveyor/ci/madiedgar/legesher-translations/?style=flat-square&labelColor=black&logo=appveyor&logoColor=white" alt="Windows Build Status"></a>
-    <a href="https://david-dm.org/legesher/legesher-translations/">
-        <img src="https://img.shields.io/david/legesher/legesher-translations/?style=flat-square&labelColor=black" alt="David Dependency Status"></a> -->
+<p align="center">
     <a href="http://makeapullrequest.com">
         <img src="https://img.shields.io/badge/pull_requests-welcome-brightgreen.svg?style=flat-square&labelColor=black" alt="Pull Requests Welcome"></a>
-    <a href="https://github.com/legesher/legesher-translations/issues?q=is%3Aopen+is%3Aissue+label%3A%22Good+First+Issue%22">
-        <img src="https://img.shields.io/badge/first--timers--only-friendly-success.svg?style=flat-square&labelColor=black" alt="First Timers Only"></a>
-</p>
-<!-- SUPPORT BADGES -->
-<p align="center" style="margin-bottom: 5px;>
-    <a href="https://github.com/legesher/legesher-translations/" alt="Repository">
-        <img src="https://img.shields.io/badge/Legesher_Translations-0.0.1-f58977.svg?style=flat-square&labelColor=black&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTAxLjE3IDUwMS4xNyI+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPjxlbGxpcHNlIGN4PSIxNzUuMjMiIGN5PSIyNTAuMTMiIHJ4PSIzNS45OCIgcnk9IjQxLjg5IiBmaWxsPSJub25lIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC0yIj48ZWxsaXBzZSBjeD0iMzI0LjIiIGN5PSIyNTAuMTMiIHJ4PSIzNS45OCIgcnk9IjQxLjg5IiBmaWxsPSJub25lIi8+PC9jbGlwUGF0aD48L2RlZnM+PHRpdGxlPlBlZ2d5LUhlYWRzaG90QWxwaGE8L3RpdGxlPjxnIHN0eWxlPSJpc29sYXRpb246aXNvbGF0ZSI+PGcgaWQ9IkxheWVyXzEiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBhdGggZD0iTTE2Mi40OCwzNjRjNzYuODgsNTEuNjUsMzYuNywyNTMuNDYsMjAxLDI1Mi4wOHM3Ni44My05NS4xLDc2LjgzLTk1LjEtMTksNDYuNjctNjguNywxMy41OC03MC0xNDUtNDEuMDktMTY0LjRTMTYyLjQ4LDM2NCwxNjIuNDgsMzY0WiIgZmlsbD0iI2ZmODk3NiIvPjxwYXRoIGQ9Ik0zMjIuNjEsNDU2YzEsMy42NSwyLjA5LDYuMTYsMy4zOSw3LjY5LTEyLjQ0LTQwLTEyLjIxLTgyLjMyLDQuNTYtOTMuNTcsMTQuODUtMTAtMjkuNzYtMTEuMzEtNzYuNzMtMTAuMjhsLTEwLjQyLDUuODYtMywyOS44M1MzMDkuMTUsNDA0LjUxLDMyMi42MSw0NTZaIiBmaWxsPSIjZjQ4ODc3IiBvcGFjaXR5PSIwLjUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTptdWx0aXBseSIvPjxjaXJjbGUgY3g9IjI1MC41NSIgY3k9IjI1Ni45MSIgcj0iMTM4LjYyIiBmaWxsPSIjZmY4OTc2Ii8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiPjxlbGxpcHNlIGN4PSIxNzUuMjMiIGN5PSIyNTAuMTMiIHJ4PSIzNS45OCIgcnk9IjQxLjg5IiBmaWxsPSIjZmZmIi8+PGVsbGlwc2UgY3g9IjE4NS4zNyIgY3k9IjI0OS4xNCIgcng9IjMzLjAxIiByeT0iMzguNDMiIGZpbGw9IiMyNjI2MjYiLz48L2c+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aC0yKSI+PGVsbGlwc2UgY3g9IjMyNC4yIiBjeT0iMjUwLjEzIiByeD0iMzUuOTgiIHJ5PSI0MS44OSIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSIzMTQuMDYiIGN5PSIyNDkuMTQiIHJ4PSIzMy4wMSIgcnk9IjM4LjQzIiBmaWxsPSIjMjYyNjI2Ii8+PC9nPjxwb2x5Z29uIHBvaW50cz0iMTQwLjUzIDI4NC45NCAzNjAuMjggMjg0Ljk0IDMyMi4yMyAzMTYuMDIgMTY3LjkyIDMxOS4yMSAxNDAuNTMgMjg0Ljk0IiBmaWxsPSIjZmY4OTc2Ii8+PHBhdGggZD0iTTE5Ni4zNCwyNzMuN3MyMi4zMy0yNC45Miw1NS0yNC45Miw1My4yNCwyNC45Miw1My4yNCwyNC45Mi0xMiw1Ni40Mi01NC4xLDU2LjQyUzE5Ni4zNCwyNzMuNywxOTYuMzQsMjczLjdaIiBmaWxsPSIjZmJjNDk5Ii8+PHBhdGggZD0iTTE5Ni4zNCwyNzMuN3MyMi4zMy0yNC45Miw1NS0yNC45Miw1My4yNCwyNC45Miw1My4yNCwyNC45Mi0xMiwyOS43LTU0LjEsMjkuN1MxOTYuMzQsMjczLjcsMTk2LjM0LDI3My43WiIgZmlsbD0iI2ZkZTRkMyIvPjxwb2x5Z29uIHBvaW50cz0iMTQ0LjEgMjMzLjg3IDE2Ni4yOCAyNDcuNzQgMTQyLjUxIDI2MC4wMiAxNDQuMSAyMzMuODciIGZpbGw9IiNmZmYiLz48cG9seWdvbiBwb2ludHM9IjM1NS4zMyAyMzMuODcgMzMzLjE0IDI0Ny43NCAzNTYuOTEgMjYwLjAyIDM1NS4zMyAyMzMuODciIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMjExLjEsMTIzLjgyczQ1LTIzLDU5LjY5LTIzLDEwLjQ3LDIzLDEwLjQ3LDIzWiIgZmlsbD0iI2ZmODk3NiIvPjxwYXRoIGQ9Ik0zNTIuMzYsMTE0LjY0YTkuNDMsOS40MywwLDAsMSw0LjE1LTE1Ljg5YzYuNDctMS42MSwxNi4xMi0uNzEsMzAuMDgsNy40NiwxOSwxMS4xMSwxOS4zMSwyNy4wNiwxNi4zLDM4LjM2LTEuODMsNi44OS0xMC41Niw5LjEtMTUuNjYsNC4xMloiIGZpbGw9IiMyNjI2MjYiLz48cGF0aCBkPSJNMTU0LjM5LDExNC42NGE5LjQzLDkuNDMsMCwwLDAtNC4xNS0xNS44OWMtNi40Ny0xLjYxLTE2LjEyLS43MS0zMC4wOCw3LjQ2LTE5LDExLjExLTE5LjMxLDI3LjA2LTE2LjMsMzguMzYsMS44Myw2Ljg5LDEwLjU2LDkuMSwxNS42Niw0LjEyWiIgZmlsbD0iIzI2MjYyNiIvPjwvZz48L2c+PC9zdmc+" /></a>
-    <!-- <a href="https://github.com/legesher/legesher-translations/graphs/contributors" alt="Contributors">
-        <img src="https://img.shields.io/github/contributors/legesher/legesher-translations?style=flat-square&color=f58977&labelColor=black" /></a> -->
-    <a href="#the-community" alt="All Contributors">
+    <a href="#contributors" alt="All Contributors">
         <img src="https://img.shields.io/badge/all_contributors-149-black?style=flat-square&color=f58977&labelColor=black" /></a>
-    <a href="https://github.com/sponsors/madiedgar" alt="Sponsors on Github">
-        <img src="https://img.shields.io/badge/sponsor-@madiedgar-black?style=flat-square&color=f58977&labelColor=black" /></a>
-
 </p>
-<!-- SOCIAL BADGES -->
-<p align="center">
-    <a href="https://github.com/legesher">
-        <img src="https://img.shields.io/badge/-Contribute-black?style=flat-square&logo=github&logoColor=7ed2e7"
-            alt="Contribute on Github"></a>
-    <!-- <a href="https://twitch.tv/withmadico">
-        <img src="https://img.shields.io/badge/-Watch-black?style=flat-square&logo=twitch&logoColor=7ed2e7"
-            alt="Watch on Twitch"></a> -->
-    <a href="https://discord.gg/DkVjVDP">
-        <img src="https://img.shields.io/badge/-Chat-black?style=flat-square&logo=discord&logoColor=7ed2e7"
-            alt="chat on Discord"></a>
-    <a href="https://www.instagram.com/legesher/">
-        <img src="https://img.shields.io/badge/-Connect-black?style=flat-square&logo=instagram&logoColor=7ed2e7"
-            alt="follow on Instagram"></a>
-    <a href="https://twitter.com/intent/follow?screen_name=legesherio">
-        <img src="https://img.shields.io/badge/-Tweet-black?style=flat-square&logo=twitter&logoColor=7ed2e7"
-            alt="follow on Twitter"></a>
-    <!-- <a href="https://medium.com/@legesher">
-        <img src="https://img.shields.io/badge/-Read-black?style=flat-square&logo=medium&logoColor=7ed2e7"
-            alt="Read on Medium"></a> -->
-    <a href="https://mailchi.mp/083d8b2e0e12/legesher-landing-page">
-        <img src="https://img.shields.io/badge/-Subscribe-black?style=flat-square&logo=mailchimp&logoColor=7ed2e7"
-            alt="Subscribe on Mailchimp"></a>    
-</p>
-<!-- SOCIAL MEDIA -->
 
-# Introduction
+## Start here
 
-**`legesher-translations`** :loudspeaker: is the home of the written language translations for the entire Legesher project.
+You do not need to know how to code to contribute, and you do not need to know Python to review a Python pack.
 
-## Languages
+- **Offer a word.** [Propose a localization option](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml): select a term, share your word + give your reasoning.
+- **Review a language pack.** [Review many terms in one issue](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml), or [review by file](REVIEWING.md#7-reviewing-by-file) for a full session.
+- **Join as a reviewer.** [Sign up](https://github.com/legesher/language-packs/issues/new?template=reviewer_signup.yml) and tell us your language.
+- **Read the guide.** [REVIEWING.md](REVIEWING.md) explains how reviewing works from start to finish. It is written for linguists and teachers as well as developers.
 
-We are actively working on adding as many written languages as we can for version 1.0.0 to remove the language barrier in order to learn computer science.
+## How your contribution helps shape the future
 
-### Languages in Active Development
+1. A maintainer reads every submission before it is shown to anyone else.
+2. Once it is cleared, your word is added to the **[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face. The corpus holds every word anyone has offered for a term and every endorsement it has received. It is openly licensed (CC BY 4.0), and contributors appear in it only as opaque ids.
+3. Reviewers who speak the language endorse the words they would teach.
+4. When a language has enough review, its pack is released again with the community's words.
 
-- [Afar (aa)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Afar")
-- [Arabic (ar)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Arabic")
-- [Azerbaijani (az)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Azerbaijani")
-- [Bengali (bn)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Bengali")
-- [Danish (da)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Danish")
-- [Dutch (nl)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Dutch")
-- [Finnish (fi)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Finnish")
-- [French (fr)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+French")
-- [Gaelic (ga)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Gaelic")
-- [German (de)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+German")
-- [Greek (el)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Greek")
-- [Gujarati (gu)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Gujarati")
-- [Hebrew (he)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Hebrew")
-- [Hindi (hi)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Hindi")
-- [Indonesian (id)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Indonesian")
-- [Italian (it)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Italian")
-- [Kabyle (kab)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Kabyle")
-- [Malayalam (ml)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Malayalam")                                                                   
-- [Nepali (ne)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Nepali")
-- [Polish (pl) ](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Polish")
-- [Portuguese (pt)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Portugese")
-- [Romanian (ro)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Romanian")
-- [Russian (ru)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Russian")
-- [Spanish (es)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Spanish")
-- [Swahili (sw)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Swahili")
-- [Tagalog (tl)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Tagalog")
-- [Telugu (te)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Telugu")
-- [Turkish (tr)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Turkish")
-- [Ukrainian (uk)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Ukranian")
-- [Urdu (ur)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Urdu")
-- [Welsh (cy)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Welsh")
-- [Xhosa (xh)](https://github.com/legesher/legesher-translations/issues?q=label%3A"Dialect%3A+Xhosa")
+Every word offered is kept as an option, including the ones that are not chosen for a pack.
 
-_📢 If your native language is not available in the Legesher translation repository, we'd love your help to add it!! Create an issue using the "🌏 Add New Dialect" template._
+You can read the corpus yourself:
 
-# Contributing
-
-❤️ Legesher relies on the passionate members of its community (both developer and non-developer alike) to keep delivering impactful tools to people all over the world.
-
-Before contributing, be sure to consult Legesher's [contribution guidelines](https://docs.legesher.io/the-official-things/contributing-guidelines) and [language conventions](https://docs.legesher.io/legesher-translations/translation-conventions). As a member of our community, you must abide by our [Code Of Conduct](https://docs.legesher.io/the-official-things/code-of-conduct).
-
-## Installation
-
-**1️⃣ Fork the `legesher/legesher-translations/` repository**  
-Follow these instructions on [how to fork a repository](https://help.github.com/en/articles/fork-a-repo)
-
-**2️⃣ Cloning the repository**  
-Once you have set up your fork of the `legesher/legesher-translations` repository, you'll want to clone it to your local machine. This is so you can make and test all of your personal edits before adding it to the master version of `legesher/legesher-translations`.
-
-Navigate to the location on your computer where you want to host your code. Once in the appropriate folder, run the following command to clone the repository to your local machine.
-
-```
-git clone git@github.com:your-username/legesher-translations.git
+```python
+from datasets import load_dataset
+options = load_dataset("legesher/language-corpus", "options")
 ```
 
-**3️⃣ Switch to the language's branch**
-For translating, any changes will be first made in the language specific branch, `LANGUAGE-translation`. _Please make translation PR's for a new or reviewed language to the designated branch and not to `master`._
+The packs that ship are published as the [language-packs dataset](https://huggingface.co/datasets/legesher/language-packs). The engine that reads them is released separately.
 
-More details on translation PR expectations are found in the [Translation Guide](https://docs.legesher.io/legesher-translations/translation-guide).
+## Ground Rules
 
-## Development
+- [Contributing](CONTRIBUTING.md): the ways to contribute and what to expect.
+- [Reviewing guide](REVIEWING.md): how reviewing works, who can review, and how a pack moves from experimental to official.
+- [Community Guidelines](COMMUNITY_GUIDELINES.md): how we work together on a shared corpus, and how disagreement is handled.
+- [AI-Assisted Contributions](AI_CONTRIBUTIONS.md): AI-assisted work is welcome when you say so, and people make the final decisions.
+- [Your contributions and your data](CONTRIBUTOR_PRIVACY.md): how you are credited, what is published, and how to withdraw.
+- [Code of Conduct](CODE_OF_CONDUCT.md): how we treat each other.
 
-We love your desire to give back, and want to make the process as welcoming to newcomers and experts as possible. We're working on developing more intuitive tutorials for individuals of all skill levels and expertise, so if you think the community would value from being walked through the steps you're going through please share! ❤️
+We never ask for your email on a public form. To reach us privately, write to <contribute@legesher.com>.
 
-# Legesher Projects
+## Honoring the Legacy
 
-Legesher Developer Tools might be useful to you if:
+This repository began as Legesher Translations. Before the corpus existed, 149 contributors built Legesher's first locale files and review discussions here, and showed that language communities would do this work. Thank you. That version of the repository is preserved at the tag [`v1-archive`](https://github.com/legesher/language-packs/releases/tag/v1-archive). Its words and review history are part of the corpus, and everyone who contributed is credited in [CONTRIBUTORS.md](CONTRIBUTORS.md) and below.
 
-- you are a non-native English speaker
-- you are new to programming
-- you work on a team with non-native English speakers
-- you are a developer (simple enough)
+## License
 
-| Project                                                                                  | Purpose                                                                                                   |
-| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [`tree-sitter-legesher-python`](https://github.com/legesher/tree-sitter-legesher-python) | Tree-sitter python grammar used by text editors allowing Legesher's languages to be implemented           |
-| [`language-legesher-python`](https://github.com/legesher/language-legesher-python)       | Atom's programming language binding to allow syntax highlighting, code folding, etc. to a specific grammar |
-| [`legesher-translations`](https://github.com/legesher/legesher-translations)             | Host and API of all the language translations for written languages for code keywords / concepts          |
-| [`legesher-dot-io`](https://github.com/legesher/legesher-dot-io)                         | Legesher's public [website](https://legesher.io)                                                          |
-| [`legesher-docs`](https://github.com/legesher/legesher-docs)                             | Legesher's documentation hub. Will be transitioning to a documentation host soon.                         |
-| [`legesher`](https://github.com/legesher/legesher)                                       | Git integration to collaborate with code and others in other languages                                    |
-| [`legesher-pride`](https://github.com/legesher/legesher-pride)                           | A non-programmer's dream is to conrtibute to open source by sharing what they know and learning what's new |
+This repository is licensed under the [MIT License](LICENSE.md).
 
-## The Community
+## Contributors
 
-A message from our [founder, Madi](https://www.instagram.com/withmadico/):
-
-> It is truly a blessing to be surrounded by a community of passionate, driven individuals who love sharing their gifts to creating better products together. Your contribution means the world to me and keeps me motivated to continue creating. This wouldn't be possible without you. From the bottom of my heart, 💛 THANK YOU!
-
-Meet our [community](https://legesher.io/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)),
+whose full roster lives in [CONTRIBUTORS.md](CONTRIBUTORS.md):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -176,10 +69,10 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4?s=100" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="#community-madiedgar" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#projectManagement-madiedgar" title="Project Management">📆</a> <a href="#translation-madiedgar" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fernandasj"><img src="https://avatars2.githubusercontent.com/u/19349745?v=4?s=100" width="100px;" alt="Fernanda Vieira"/><br /><sub><b>Fernanda Vieira</b></sub></a><br /><a href="#community-fernandasj" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/commits?author=fernandasj" title="Documentation">📖</a> <a href="#marketing-fernandasj" title="Marketing - People who help in marketing the repo/project">💌</a> <a href="#translation-fernandasj" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fernandasj"><img src="https://avatars2.githubusercontent.com/u/19349745?v=4?s=100" width="100px;" alt="Fernanda Vieira"/><br /><sub><b>Fernanda Vieira</b></sub></a><br /><a href="#community-fernandasj" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/commits?author=fernandasj" title="Documentation">📖</a> <a href="#marketing-fernandasj" title="Marketing - People who help in marketing the repo/project">💌</a> <a href="#translation-fernandasj" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ZeroOne010101"><img src="https://avatars2.githubusercontent.com/u/43586679?v=4?s=100" width="100px;" alt="zeroone010101"/><br /><sub><b>zeroone010101</b></sub></a><br /><a href="#community-ZeroOne010101" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-ZeroOne010101" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://lolei.github.io/"><img src="https://avatars3.githubusercontent.com/u/9076894?v=4?s=100" width="100px;" alt="Lorenz Leitner"/><br /><sub><b>Lorenz Leitner</b></sub></a><br /><a href="#community-LoLei" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-LoLei" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/wang-ories"><img src="https://avatars1.githubusercontent.com/u/52870180?v=4?s=100" width="100px;" alt="WANG - YANG"/><br /><sub><b>WANG - YANG</b></sub></a><br /><a href="#community-wang-ories" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/commits?author=wang-ories" title="Documentation">📖</a> <a href="#translation-wang-ories" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/wang-ories"><img src="https://avatars1.githubusercontent.com/u/52870180?v=4?s=100" width="100px;" alt="WANG - YANG"/><br /><sub><b>WANG - YANG</b></sub></a><br /><a href="#community-wang-ories" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/commits?author=wang-ories" title="Documentation">📖</a> <a href="#translation-wang-ories" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/tomekp97"><img src="https://avatars3.githubusercontent.com/u/28924907?v=4?s=100" width="100px;" alt="tomekp97"/><br /><sub><b>tomekp97</b></sub></a><br /><a href="#translation-tomekp97" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/katherinefernandes"><img src="https://avatars3.githubusercontent.com/u/39100068?v=4?s=100" width="100px;" alt="Katherine Fernandes"/><br /><sub><b>Katherine Fernandes</b></sub></a><br /><a href="#community-katherinefernandes" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-katherinefernandes" title="Translation">🌍</a></td>
     </tr>
@@ -214,7 +107,7 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
       <td align="center" valign="top" width="14.28%"><a href="https://rigoramirez.com"><img src="https://avatars1.githubusercontent.com/u/9856345?v=4?s=100" width="100px;" alt="Rigo Ramírez"/><br /><sub><b>Rigo Ramírez</b></sub></a><br /><a href="#community-reegoram" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-reegoram" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/kararade"><img src="https://avatars1.githubusercontent.com/u/6010411?v=4?s=100" width="100px;" alt="Carlos Almeida"/><br /><sub><b>Carlos Almeida</b></sub></a><br /><a href="#community-kararade" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-kararade" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kcmvillarino"><img src="https://avatars2.githubusercontent.com/u/17331323?v=4?s=100" width="100px;" alt="Charlie Villarino"/><br /><sub><b>Charlie Villarino</b></sub></a><br /><a href="#translation-kcmvillarino" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/anna-hayhurst-98aa58140/"><img src="https://avatars3.githubusercontent.com/u/31887817?v=4?s=100" width="100px;" alt="Anna"/><br /><sub><b>Anna</b></sub></a><br /><a href="https://github.com/madiedgar/legesher-translations/commits?author=annahayhurst" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/anna-hayhurst-98aa58140/"><img src="https://avatars3.githubusercontent.com/u/31887817?v=4?s=100" width="100px;" alt="Anna"/><br /><sub><b>Anna</b></sub></a><br /><a href="https://github.com/legesher/language-packs/commits?author=annahayhurst" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sime1"><img src="https://avatars2.githubusercontent.com/u/8495723?v=4?s=100" width="100px;" alt="sime1"/><br /><sub><b>sime1</b></sub></a><br /><a href="#community-sime1" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-sime1" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/jayehernandez/"><img src="https://avatars1.githubusercontent.com/u/13959651?v=4?s=100" width="100px;" alt="Jaye Hernandez"/><br /><sub><b>Jaye Hernandez</b></sub></a><br /><a href="#community-jayehernandez" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-jayehernandez" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/zolumasoft"><img src="https://avatars3.githubusercontent.com/u/6179125?v=4?s=100" width="100px;" alt="Gift M"/><br /><sub><b>Gift M</b></sub></a><br /><a href="#translation-zolumasoft" title="Translation">🌍</a></td>
@@ -224,7 +117,7 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/JohannaHillebrand"><img src="https://avatars2.githubusercontent.com/u/32872683?v=4?s=100" width="100px;" alt="Johanna"/><br /><sub><b>Johanna</b></sub></a><br /><a href="#community-JohannaHillebrand" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-JohannaHillebrand" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://br.linkedin.com/in/lucianorc"><img src="https://avatars3.githubusercontent.com/u/15809447?v=4?s=100" width="100px;" alt="Luciano Costa"/><br /><sub><b>Luciano Costa</b></sub></a><br /><a href="#community-lucianorc" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-lucianorc" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/merelyAnna"><img src="https://avatars3.githubusercontent.com/u/8435581?v=4?s=100" width="100px;" alt="merelyanna"/><br /><sub><b>merelyanna</b></sub></a><br /><a href="#community-merelyAnna" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-merelyAnna" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://mpaulcodes.com"><img src="https://avatars1.githubusercontent.com/u/7773134?v=4?s=100" width="100px;" alt="Mary Paul"/><br /><sub><b>Mary Paul</b></sub></a><br /><a href="#community-chauxvive" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/commits?author=chauxvive" title="Documentation">📖</a> <a href="#translation-chauxvive" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://mpaulcodes.com"><img src="https://avatars1.githubusercontent.com/u/7773134?v=4?s=100" width="100px;" alt="Mary Paul"/><br /><sub><b>Mary Paul</b></sub></a><br /><a href="#community-chauxvive" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/commits?author=chauxvive" title="Documentation">📖</a> <a href="#translation-chauxvive" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://silive.in"><img src="https://avatars3.githubusercontent.com/u/30745619?v=4?s=100" width="100px;" alt="bvishal8510"/><br /><sub><b>bvishal8510</b></sub></a><br /><a href="#community-bvishal8510" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-bvishal8510" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://mercode.org"><img src="https://avatars1.githubusercontent.com/u/40173707?v=4?s=100" width="100px;" alt="Tan Siret G. AKINCI"/><br /><sub><b>Tan Siret G. AKINCI</b></sub></a><br /><a href="#translation-Yutyo" title="Translation">🌍</a></td>
     </tr>
@@ -239,12 +132,12 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/naderalfakesh"><img src="https://avatars3.githubusercontent.com/u/48882168?v=4?s=100" width="100px;" alt="Nadir Alfakesh"/><br /><sub><b>Nadir Alfakesh</b></sub></a><br /><a href="#community-naderalfakesh" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-naderalfakesh" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://adarwall.github.io/Adarwall"><img src="https://avatars1.githubusercontent.com/u/42234958?v=4?s=100" width="100px;" alt="Adar Wallerstein"/><br /><sub><b>Adar Wallerstein</b></sub></a><br /><a href="#community-Adarwall" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/commits?author=Adarwall" title="Documentation">📖</a> <a href="#translation-Adarwall" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://adarwall.github.io/Adarwall"><img src="https://avatars1.githubusercontent.com/u/42234958?v=4?s=100" width="100px;" alt="Adar Wallerstein"/><br /><sub><b>Adar Wallerstein</b></sub></a><br /><a href="#community-Adarwall" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/commits?author=Adarwall" title="Documentation">📖</a> <a href="#translation-Adarwall" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nagendrady"><img src="https://avatars1.githubusercontent.com/u/31478127?v=4?s=100" width="100px;" alt="nagendrady"/><br /><sub><b>nagendrady</b></sub></a><br /><a href="#community-nagendrady" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-nagendrady" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fernandakawasaki"><img src="https://avatars2.githubusercontent.com/u/50497814?v=4?s=100" width="100px;" alt="Fernanda Kawasaki"/><br /><sub><b>Fernanda Kawasaki</b></sub></a><br /><a href="#community-fernandakawasaki" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-fernandakawasaki" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ypresion"><img src="https://avatars1.githubusercontent.com/u/45670033?v=4?s=100" width="100px;" alt="ypresion"/><br /><sub><b>ypresion</b></sub></a><br /><a href="#community-ypresion" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-ypresion" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/iam-agf"><img src="https://avatars2.githubusercontent.com/u/61362029?v=4?s=100" width="100px;" alt="agf-nohchil"/><br /><sub><b>agf-nohchil</b></sub></a><br /><a href="#translation-iam-agf" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/alxnull"><img src="https://avatars1.githubusercontent.com/u/26907770?v=4?s=100" width="100px;" alt="alxnull"/><br /><sub><b>alxnull</b></sub></a><br /><a href="#community-alxnull" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/pulls?q=is%3Apr+reviewed-by%3Aalxnull" title="Reviewed Pull Requests">👀</a> <a href="#translation-alxnull" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/alxnull"><img src="https://avatars1.githubusercontent.com/u/26907770?v=4?s=100" width="100px;" alt="alxnull"/><br /><sub><b>alxnull</b></sub></a><br /><a href="#community-alxnull" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/pulls?q=is%3Apr+reviewed-by%3Aalxnull" title="Reviewed Pull Requests">👀</a> <a href="#translation-alxnull" title="Translation">🌍</a></td>
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SvA1"><img src="https://avatars1.githubusercontent.com/u/41849274?v=4?s=100" width="100px;" alt="Svetlana A."/><br /><sub><b>Svetlana A.</b></sub></a><br /><a href="#community-SvA1" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-SvA1" title="Translation">🌍</a></td>
@@ -261,11 +154,11 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/davidsennekool"><img src="https://avatars2.githubusercontent.com/u/5947194?v=4?s=100" width="100px;" alt="David Sennekool"/><br /><sub><b>David Sennekool</b></sub></a><br /><a href="#community-davidsennekool" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-davidsennekool" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Nigar6001"><img src="https://avatars2.githubusercontent.com/u/52638265?v=4?s=100" width="100px;" alt="Nigar6001"/><br /><sub><b>Nigar6001</b></sub></a><br /><a href="#community-Nigar6001" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-Nigar6001" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/minna-xD"><img src="https://avatars2.githubusercontent.com/u/44906587?v=4?s=100" width="100px;" alt="Minna N."/><br /><sub><b>Minna N.</b></sub></a><br /><a href="#community-minna-xD" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-minna-xD" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/begeistert"><img src="https://avatars1.githubusercontent.com/u/36460223?v=4?s=100" width="100px;" alt="Iván Montiel Cardona"/><br /><sub><b>Iván Montiel Cardona</b></sub></a><br /><a href="#community-begeistert" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/pulls?q=is%3Apr+reviewed-by%3Abegeistert" title="Reviewed Pull Requests">👀</a> <a href="#translation-begeistert" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/justin-lourie-cole"><img src="https://avatars1.githubusercontent.com/u/69779682?v=4?s=100" width="100px;" alt="justin-cole"/><br /><sub><b>justin-cole</b></sub></a><br /><a href="https://github.com/madiedgar/legesher-translations/commits?author=justin-lourie-cole" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/begeistert"><img src="https://avatars1.githubusercontent.com/u/36460223?v=4?s=100" width="100px;" alt="Iván Montiel Cardona"/><br /><sub><b>Iván Montiel Cardona</b></sub></a><br /><a href="#community-begeistert" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/pulls?q=is%3Apr+reviewed-by%3Abegeistert" title="Reviewed Pull Requests">👀</a> <a href="#translation-begeistert" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/justin-lourie-cole"><img src="https://avatars1.githubusercontent.com/u/69779682?v=4?s=100" width="100px;" alt="justin-cole"/><br /><sub><b>justin-cole</b></sub></a><br /><a href="https://github.com/legesher/language-packs/commits?author=justin-lourie-cole" title="Documentation">📖</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/wambugucoder"><img src="https://avatars3.githubusercontent.com/u/35865592?v=4?s=100" width="100px;" alt="JosWambugu"/><br /><sub><b>JosWambugu</b></sub></a><br /><a href="#community-wambugucoder" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/commits?author=wambugucoder" title="Documentation">📖</a> <a href="#translation-wambugucoder" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/wambugucoder"><img src="https://avatars3.githubusercontent.com/u/35865592?v=4?s=100" width="100px;" alt="JosWambugu"/><br /><sub><b>JosWambugu</b></sub></a><br /><a href="#community-wambugucoder" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/commits?author=wambugucoder" title="Documentation">📖</a> <a href="#translation-wambugucoder" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/belkacemm"><img src="https://avatars.githubusercontent.com/u/36551090?v=4?s=100" width="100px;" alt="belkacemm"/><br /><sub><b>belkacemm</b></sub></a><br /><a href="#community-belkacemm" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-belkacemm" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://shrill-shrestha-portfolio.herokuapp.com/"><img src="https://avatars.githubusercontent.com/u/43284212?v=4?s=100" width="100px;" alt="Shrill Shrestha"/><br /><sub><b>Shrill Shrestha</b></sub></a><br /><a href="#community-ShrillShrestha" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-ShrillShrestha" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Gal-Gilor"><img src="https://avatars.githubusercontent.com/u/25570697?v=4?s=100" width="100px;" alt="Gal Gilor"/><br /><sub><b>Gal Gilor</b></sub></a><br /><a href="#community-Gal-Gilor" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-Gal-Gilor" title="Translation">🌍</a></td>
@@ -279,8 +172,8 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/manojkrishnak"><img src="https://avatars.githubusercontent.com/u/28722629?v=4?s=100" width="100px;" alt="manojkrishnak"/><br /><sub><b>manojkrishnak</b></sub></a><br /><a href="#community-manojkrishnak" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-manojkrishnak" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/milafreckled"><img src="https://avatars.githubusercontent.com/u/60186181?v=4?s=100" width="100px;" alt="milafreckled"/><br /><sub><b>milafreckled</b></sub></a><br /><a href="#community-milafreckled" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-milafreckled" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/179priyasoni"><img src="https://avatars.githubusercontent.com/u/85613611?v=4?s=100" width="100px;" alt="179priyasoni"/><br /><sub><b>179priyasoni</b></sub></a><br /><a href="#community-179priyasoni" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-179priyasoni" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jaimegarjr"><img src="https://avatars.githubusercontent.com/u/40704782?v=4?s=100" width="100px;" alt="Jaime Garcia Jr"/><br /><sub><b>Jaime Garcia Jr</b></sub></a><br /><a href="#community-jaimegarjr" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/pulls?q=is%3Apr+reviewed-by%3Ajaimegarjr" title="Reviewed Pull Requests">👀</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sarr266"><img src="https://avatars.githubusercontent.com/u/104586011?v=4?s=100" width="100px;" alt="sarr266"/><br /><sub><b>sarr266</b></sub></a><br /><a href="#community-sarr266" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/pulls?q=is%3Apr+reviewed-by%3Asarr266" title="Reviewed Pull Requests">👀</a> <a href="#translation-sarr266" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jaimegarjr"><img src="https://avatars.githubusercontent.com/u/40704782?v=4?s=100" width="100px;" alt="Jaime Garcia Jr"/><br /><sub><b>Jaime Garcia Jr</b></sub></a><br /><a href="#community-jaimegarjr" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/pulls?q=is%3Apr+reviewed-by%3Ajaimegarjr" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sarr266"><img src="https://avatars.githubusercontent.com/u/104586011?v=4?s=100" width="100px;" alt="sarr266"/><br /><sub><b>sarr266</b></sub></a><br /><a href="#community-sarr266" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/pulls?q=is%3Apr+reviewed-by%3Asarr266" title="Reviewed Pull Requests">👀</a> <a href="#translation-sarr266" title="Translation">🌍</a></td>
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/collinskoech11"><img src="https://avatars.githubusercontent.com/u/35452377?v=4?s=100" width="100px;" alt="Collins Koech"/><br /><sub><b>Collins Koech</b></sub></a><br /><a href="#translation-collinskoech11" title="Translation">🌍</a></td>
@@ -359,13 +252,13 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/bhska"><img src="https://avatars.githubusercontent.com/u/34903088?v=4?s=100" width="100px;" alt="Bhaska"/><br /><sub><b>Bhaska</b></sub></a><br /><a href="#community-bhska" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="#translation-bhska" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/cedarfall"><img src="https://github.com/cedarfall.png?s=100" width="100px;" alt="cedarfall"/><br /><sub><b>cedarfall</b></sub></a><br /><a href="#translation-cedarfall" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fabio08"><img src="https://avatars.githubusercontent.com/u/56138795?v=4?s=100" width="100px;" alt="Fábio Almeida"/><br /><sub><b>Fábio Almeida</b></sub></a><br /><a href="#translation-fabio08" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fishmandev"><img src="https://avatars.githubusercontent.com/u/29619660?v=4?s=100" width="100px;" alt="lo0"/><br /><sub><b>lo0</b></sub></a><br /><a href="#community-fishmandev" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/madiedgar/legesher-translations/commits?author=fishmandev" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/justin-at-straker"><img src="https://avatars.githubusercontent.com/u/69779682?v=4?s=100" width="100px;" alt="justin cole"/><br /><sub><b>justin cole</b></sub></a><br /><a href="https://github.com/madiedgar/legesher-translations/commits?author=justin-at-straker" title="Documentation">📖</a> <a href="#translation-justin-at-straker" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lissizza"><img src="https://avatars.githubusercontent.com/u/645932?v=4?s=100" width="100px;" alt="Irina Silvestrova"/><br /><sub><b>Irina Silvestrova</b></sub></a><br /><a href="https://github.com/madiedgar/legesher-translations/pulls?q=is%3Apr+reviewed-by%3Alissizza" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fishmandev"><img src="https://avatars.githubusercontent.com/u/29619660?v=4?s=100" width="100px;" alt="lo0"/><br /><sub><b>lo0</b></sub></a><br /><a href="#community-fishmandev" title="Community & Discussion - Reported issues, asked or answered questions, participated in GitHub discussions">👥</a> <a href="https://github.com/legesher/language-packs/commits?author=fishmandev" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/justin-at-straker"><img src="https://avatars.githubusercontent.com/u/69779682?v=4?s=100" width="100px;" alt="justin cole"/><br /><sub><b>justin cole</b></sub></a><br /><a href="https://github.com/legesher/language-packs/commits?author=justin-at-straker" title="Documentation">📖</a> <a href="#translation-justin-at-straker" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lissizza"><img src="https://avatars.githubusercontent.com/u/645932?v=4?s=100" width="100px;" alt="Irina Silvestrova"/><br /><sub><b>Irina Silvestrova</b></sub></a><br /><a href="https://github.com/legesher/language-packs/pulls?q=is%3Apr+reviewed-by%3Alissizza" title="Reviewed Pull Requests">👀</a></td>
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mhmdbhsk"><img src="https://github.com/mhmdbhsk.png?s=100" width="100px;" alt="mhmdbhsk"/><br /><sub><b>mhmdbhsk</b></sub></a><br /><a href="#translation-mhmdbhsk" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vasanthkumar18"><img src="https://avatars.githubusercontent.com/u/58137524?v=4?s=100" width="100px;" alt="VASANTH KUMAR B"/><br /><sub><b>VASANTH KUMAR B</b></sub></a><br /><a href="https://github.com/madiedgar/legesher-translations/commits?author=vasanthkumar18" title="Documentation">📖</a> <a href="#translation-vasanthkumar18" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vasanthkumar18"><img src="https://avatars.githubusercontent.com/u/58137524?v=4?s=100" width="100px;" alt="VASANTH KUMAR B"/><br /><sub><b>VASANTH KUMAR B</b></sub></a><br /><a href="https://github.com/legesher/language-packs/commits?author=vasanthkumar18" title="Documentation">📖</a> <a href="#translation-vasanthkumar18" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
@@ -374,5 +267,3 @@ Meet our [community](https://legesher.io/community) (full of contributors, backe
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-_This project follows the [all-contributors](https://allcontributors.org/) specification. Contributions of any kind are welcome and recognized. ✨_
