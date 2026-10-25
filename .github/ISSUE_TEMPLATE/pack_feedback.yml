@@ -155,7 +155,7 @@ body:
     description: |
       Only used when you picked "A display name I will give you" above. If that is your choice and
       this field is blank, we record you as anonymous until you give us the name (here or at
-      hello@legesher.com, whichever you prefer).
+      contribute@legesher.com, whichever you prefer).
     placeholder: e.g., Dr. A. Translator
 
 - type: checkboxes
@@ -173,8 +173,8 @@ body:
     value: |
       **Do not put an email address in this issue**, and please do not name or describe another
       contributor here: flags are about words. GitHub issues are public. If the report is about a
-      person's conduct rather than a word, it belongs at <help@legesher.com>; if it involves your
-      own privacy or identity, write to <help@legesher.com>.
+      person's conduct rather than a word, it belongs at <support@legesher.com>; if it involves your
+      own privacy or identity, write to <privacy@legesher.com>.
 
 - type: markdown
   attributes:

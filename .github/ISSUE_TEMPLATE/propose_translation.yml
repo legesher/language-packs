@@ -202,7 +202,7 @@ body:
     description: |
       Only used when you picked "A display name I will give you" above. If that is your choice and
       this field is blank, we record you as anonymous until you give us the name (here or at
-      hello@legesher.com, whichever you prefer).
+      contribute@legesher.com, whichever you prefer).
     placeholder: e.g., Dr. A. Translator
 
 - type: checkboxes
@@ -221,7 +221,7 @@ body:
       **Do not put an email address in this issue.** GitHub issues are public and we do not collect
       contact details on a public surface. If you would like us to be able to reach you about your
       contribution, or you have a privacy or credit question, write to
-      <hello@legesher.com> and mention this issue.
+      <contribute@legesher.com> and mention this issue.
 
 - type: markdown
   attributes:

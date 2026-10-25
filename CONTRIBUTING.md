@@ -73,6 +73,6 @@ notice you agreed to.
 
 ## Questions
 
-- Contributing: <hello@legesher.com>
-- Privacy, credit, or withdrawal: <help@legesher.com>
-- Conduct: <help@legesher.com>
+- Contributing: <contribute@legesher.com>
+- Privacy, credit, or withdrawal: <privacy@legesher.com>
+- Conduct: <support@legesher.com>

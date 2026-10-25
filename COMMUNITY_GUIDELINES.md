@@ -76,7 +76,7 @@ language community tends to write; it does not gatekeep what an individual is al
 - **GitHub issues and pull requests** in this repository: the contribution forms and the
   [reviewer guide](REVIEWING.md) are the way in.
 - **GitHub Discussions**, for questions, ideas, and anything that is not yet an issue.
-- **Reviewer coordination** runs by email today: <hello@legesher.com>, mentioning your
+- **Reviewer coordination** runs by email today: <contribute@legesher.com>, mentioning your
   language. Per-language channels come as native-review activity grows.
 
 Thank you for being here. A language pack is only as good as the community that forms around it.

@@ -47,7 +47,7 @@ The packs that ship are published as the [language-packs dataset](https://huggin
 - [Your contributions and your data](CONTRIBUTOR_PRIVACY.md): how you are credited, what is published, and how to withdraw.
 - [Code of Conduct](CODE_OF_CONDUCT.md): how we treat each other.
 
-We never ask for your email on a public form. To reach us privately, write to <hello@legesher.com>.
+We never ask for your email on a public form. To reach us privately, write to <contribute@legesher.com>.
 
 ## Honoring the Legacy
 

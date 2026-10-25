@@ -89,7 +89,7 @@ Community spaces include but are not limited to:
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-**<help@legesher.com>**. All complaints will be reviewed and investigated
+**<support@legesher.com>**. All complaints will be reviewed and investigated
 promptly and fairly.
 
 For public incidents, you may also:
@@ -155,7 +155,7 @@ community.
 ## Appeals
 
 Those who have been sanctioned have the right to appeal enforcement decisions.
-Appeals should be submitted to **<help@legesher.com>** with a clear explanation
+Appeals should be submitted to **<support@legesher.com>** with a clear explanation
 of why you believe the decision should be reconsidered. Appeals will be reviewed
 by a different member of the leadership team.
 
@@ -195,9 +195,9 @@ in their native languages.
 
 For questions or concerns about this Code of Conduct, please contact:
 
-- **Email:** <help@legesher.com>
+- **Email:** <support@legesher.com>
 - **GitHub:** Report via Issues or Private Security Advisory
-- **Confidential Report:** <help@legesher.com> (mark subject as CONFIDENTIAL)
+- **Confidential Report:** <support@legesher.com> (mark subject as CONFIDENTIAL)
 
 We are committed to maintaining a safe, welcoming, and inclusive community for
 all members.
