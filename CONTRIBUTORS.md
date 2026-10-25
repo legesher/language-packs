@@ -4,7 +4,7 @@ Every human who contributed to **legesher-translations** before it was archived 
 
 **Related:**
 - Active translation work now runs through this repository's forms and review lanes; the living data is the public [language corpus](https://huggingface.co/datasets/legesher/language-corpus) and [language-packs](https://huggingface.co/datasets/legesher/language-packs) datasets named in [README.md](README.md)
-- Full community review discussions for Spanish and German preserved in [`docs/review-history/`](docs/review-history/)
+- Full community review discussions for Spanish and German preserved in [`docs/review-history/`](https://github.com/legesher/language-packs/tree/v1-archive/docs/review-history) at the `v1-archive` tag
 - All contributor commits preserved in `main`'s ancestry via merge-ours commits (see [PR #322](https://github.com/legesher/language-packs/pull/322))
 
 ### How we mapped commits to GitHub accounts
@@ -192,7 +192,7 @@ Native-language speakers who contributed Python keyword translations. Contributi
 
 ## Reviewers
 
-Contributors who provided line-by-line review feedback on translation PRs. Full review discussions preserved in [`docs/review-history/`](docs/review-history/).
+Contributors who provided line-by-line review feedback on translation PRs. Full review discussions preserved in [`docs/review-history/`](https://github.com/legesher/language-packs/tree/v1-archive/docs/review-history) at the `v1-archive` tag.
 
 - **alxnull** ([@alxnull](https://github.com/alxnull))
 - **Irina Silvestrova** ([@lissizza](https://github.com/lissizza))
