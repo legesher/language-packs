@@ -53,8 +53,10 @@ jobs:
             echo "No review files changed." | tee review-check.md
             exit 0
           fi
+          # Templates and known pins come from the base commit, never from this
+          # pull request's own files.
           xargs -d '\n' legesher-i18n check-review-files --author "$AUTHOR" \
-            --report review-check.md < changed.txt
+            --base-ref "$BASE" --report review-check.md < changed.txt
 
       - name: Report
         if: always()
