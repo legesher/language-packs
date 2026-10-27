@@ -48,7 +48,9 @@ jobs:
           AUTHOR: ${{ github.event.pull_request.user.login }}
           BASE: ${{ github.event.pull_request.base.sha }}
         run: |
-          git diff --name-only --diff-filter=AMR "$BASE"...HEAD -- 'reviews/*/*' > changed.txt
+          # quotePath off: a non-ASCII file name must reach the check as itself.
+          git -c core.quotePath=false diff --name-only --diff-filter=AMR \
+            "$BASE"...HEAD -- 'reviews/*/*' > changed.txt
           if [ ! -s changed.txt ]; then
             echo "No review files changed." | tee review-check.md
             exit 0
