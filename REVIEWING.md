@@ -145,21 +145,41 @@ Step by step:
 
 ## 7. Reviewing by file
 
-For a full session over many terms, a file works better than the forms: take the **review kit** for your
-language (terms, candidates, and context, deliberately without anyone else's verdicts), record your
-endorsements, passes, flags, rankings, and your own renderings, and produce a **bundle**: a single
-JSON file in the shape the bundle schema defines (it ships with the `legesher-i18n` package). A
-review app that walks the kit and writes the bundle for you is being built; writing it by hand or
-by script works today.
+For a full session over many terms, a file works better than the forms. Two file formats are
+accepted, and both land in `reviews/` by pull request.
 
-Submit the bundle as a pull request into `reviews/incoming/<your-language>/`. Checks annotate the
-PR with schema and mechanical results; a maintainer does the human screen; **merging means your
-evidence is accepted** and goes through the same import, screening, and corpus steps as every other contribution.
-Until the incoming directory and its checks are live, attach the bundle file to a
-[bulk review issue](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml)
-instead. It is handled the same way.
+**A markdown review, from the reference template.** Take your language's template from
+`reference/<tag>.md`, where `<tag>` is the language's BCP 47 tag (`si`, `zh-Hans`, `fil`): the
+pack's `REFERENCE.md`, mirrored here, whose term tables already carry empty `Suggested` and
+`Comments` columns, whose header names the pack version and the Python view the words come from,
+and whose top carries an unchecked consent block. For each term you have an opinion on, endorse it
+(`✓` in Comments), keep it with a note (`Keep` plus the limitation), or suggest a replacement (the
+word in Suggested, your reasoning in Comments). Leave the other rows untouched (an untouched row
+means no opinion), and leave the first line of the file and the `Key`, `English`, current-word and
+`Applies to` columns as they are: the importer reads them. Language-wide observations go under
+"Notes for Future Updates". Save the file as
+`reviews/<tag>/<tag>-<your-github-username>.md` (the template names the exact path) and
+open a pull request. A later review of the same pack version updates the same file in a new pull
+request; after a pack version bump, the new review is a new file,
+`<tag>-<your-github-username>-<pack-version>.md`, started from the regenerated template. The
+username in the file name must be the account that opens the pull request. AI help with formatting
+is welcome; the linguistic judgment must be yours, and the consent block says so.
 
-One rule: **a bundle is public.** Never put an email address or private contact detail in one. To reach us privately, see §11.
+**A JSON bundle, for apps and scripts.** Take the **review kit** for your language (terms,
+candidates, and context, deliberately without anyone else's verdicts), record your endorsements,
+passes, flags, rankings, and your own renderings, and produce a **bundle**: a single JSON file in
+the shape the bundle schema defines (it ships with the `legesher-i18n` package). A review app that
+walks the kit and writes the bundle for you is being built; writing it by hand or by script works
+today.
+
+Submit the file as a pull request into `reviews/<tag>/`. Checks annotate the PR with
+schema and mechanical results; a maintainer does the human screen; **merging means your evidence is
+accepted** and goes through the same import, screening, and corpus steps as every other
+contribution. While the checks are being set up, a maintainer runs the same validation by hand,
+which takes a little longer.
+
+One rule: **a review file is public.** Never put an email address or private contact detail in one.
+To reach us privately, see §11.
 
 ## 8. What blocks a submission
 
