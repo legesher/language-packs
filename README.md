@@ -1,4 +1,4 @@
-<img src="/assets/README-EggPeggy.png" align="center"/>
+<img src="/assets/README-language-packs.png" alt="legesher language packs: legesher/language-packs" align="center"/>
 
 <h1 align="center">Legesher Language Packs</h1>
 <blockquote align="center">What if the foundation of programming was in your language? ✏️💻</blockquote>
