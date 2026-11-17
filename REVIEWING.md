@@ -26,8 +26,9 @@ This guide is new, and it will change as we learn from your reviews. If somethin
    your reasoning in Comments. Leave the other rows untouched. Language-wide observations go under
    "Notes for Future Updates". Section 1 explains how to choose a word.
 3. **Fill in "About you" and tick the Required boxes.** Under "Before you submit", change each
-   Required `- [ ]` to `- [x]`, and keep one choice on the "Credit me as" line. The check fails
-   without them, and nobody can tick them for you, because they record your own agreement.
+   Required `- [ ]` to `- [x]`. The check fails without them, and nobody can tick them for you,
+   because they record your own agreement. Keep one choice on the "Credit me as" line; if you leave
+   more than one, you are credited as anonymous.
 4. **Open a pull request** with your file, each commit signed off (`git commit -s`).
 
 Good to know before you start:
@@ -208,8 +209,9 @@ To reach us privately, see §11.
 
 Only these block a submission:
 
-- **Consent.** Every Required box under "Before you submit" is ticked, and the "Credit me as" line
-  keeps one choice. Without them a review cannot be imported; tick them and push again.
+- **Consent.** Every Required box under "Before you submit" is ticked. Without them a review cannot
+  be imported; tick them and push again. (A "Credit me as" line that keeps more than one choice does
+  not block: you are credited as anonymous.)
 - **Valid identifiers.** Terms must be valid identifiers: no spaces or punctuation, stable under
   Unicode NFKC normalization, consistent script, no invisible characters. A failing term is kept as
   evidence but cannot ship.
