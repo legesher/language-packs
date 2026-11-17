@@ -1,69 +1,21 @@
-<!---
-Thanks for the pull request, kindly include a summary of the change(s) and refer the issue(s) being fixed, also include relevant motivation and context. Please make sure to list any dependencies (if any) that are required for this change.
---->
+<!--
+Thank you for reviewing. The checklist below is what the review check looks for.
+Not a review? Delete the checklist and fill in "Not a review" instead.
+-->
 
-> Make sure you go through the [Contributing guide](https://docs.legesher.io/the-official-things/contributing-guidelines).
+## Review checklist
 
-> Please delete options that are not relevant.
+- [ ] My file is at `reviews/<tag>/<tag>-<my-github-username>.md`, and the username is the account opening this pull request.
+- [ ] I filled in "About you", ticked the Required boxes under "Before you submit", and kept one choice on the "Credit me as" line.
+- [ ] I left the first line of the file and the `Key`, `English`, current-word and `Applies to` columns unchanged.
+- [ ] Every suggestion has my reasoning in Comments.
+- [ ] Each commit is signed off (`git commit -s`).
 
-## Title
+AI help (one line, see [AI-Assisted Contributions](https://github.com/legesher/language-packs/blob/main/AI_CONTRIBUTIONS.md)):
 
-<!---
-Add #(issue no.)
---->
+A maintainer replies within 7 days.
 
-This pull request (PR) is made in reference to:
+## Not a review?
 
-<!---
-KEY REMINDER
-This project only accepts pull requests related to open issues
-- If suggesting a new feature or change, please discuss it in an issue first.
-- If fixing a bug, there should be an issue describing it with steps to reproduce.
---->
-
-## Description
-
-<!---
-Describe your changes in detail
---->
-
-> What does this PR do?
-
-> Recommendations for how to test this?
-
-## Motivation and Context
-
-<!---
-Why is this change required? What problem does it solve?
---->
-
-# Checklist:
-
-<!---
-[ ] implies unchecked
-[x] implies checked
-Tick the appropriate boxes (leave if irrelevant)
---->
-
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
-
-## Testing
-
-<!---
-Include any details about your testing process
---->
-
-- [ ] My submission passes the tests?
-  - If you did additional testing, please describe in detail how you tested your changes
-- [ ] I added new tests for core changes, as applicable?
-
-### Screenshots (if appropriate):
-
-<!--- you can also upload a GIF --->
+For a fix to the documentation or the review tooling, describe what changed and why. Each commit
+still needs a sign-off.
