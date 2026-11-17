@@ -41,8 +41,8 @@ Please read these first:
    suggest is held until a maintainer clears it.
 4. When a language has enough review, its pack is released again.
 
-Your review file is public in this repository once merged. Your comments and notes help maintainers
-and reviewers, and they are not published in the corpus.
+Your review file, comments included, is public in this repository once merged, so never put an
+email address or private contact detail in it.
 
 A submission never edits a released pack directly. Packs are built from the corpus, so a word is
 changed through review.

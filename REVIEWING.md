@@ -8,10 +8,42 @@ When you review a pack, you are an open-source contributor to Legesher, and you 
 
 This guide is written for linguists, teachers, and careful readers as well as developers. You do not need to know Python to review a Python pack. Everything here is a suggestion based on what tends to work.
 
-**Get started:**
-[sign up as a reviewer](https://github.com/legesher/language-packs/issues/new?template=reviewer_signup.yml),
-[offer a single word](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml), or
-[review a pack in bulk](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml).
+Reviewing happens by pull request, so you need a GitHub account and to be comfortable editing a
+file and opening a pull request.
+
+This guide is new, and it will change as we learn from your reviews. If something here is unclear or wrong, say so in your pull request.
+
+---
+
+## Start here: review by pull request
+
+1. **Copy the template.** Copy `reference/<tag>.md` to
+   `reviews/<tag>/<tag>-<your-github-username>.md`. The tag is your language's code (`ml`,
+   `zh-Hans`, `fil`), and the template names the exact path. The username must be the account that
+   opens the pull request.
+2. **Review the terms you have an opinion on.** Put `✓` in Comments to endorse the current word,
+   write `Keep` plus a note to endorse it with a limitation, or put another word in Suggested with
+   your reasoning in Comments. Leave the other rows untouched. Language-wide observations go under
+   "Notes for Future Updates". Section 1 explains how to choose a word.
+3. **Fill in "About you" and tick the Required boxes.** Under "Before you submit", change each
+   Required `- [ ]` to `- [x]`, and keep one choice on the "Credit me as" line. The check fails
+   without them, and nobody can tick them for you, because they record your own agreement.
+4. **Open a pull request** with your file, each commit signed off (`git commit -s`).
+
+Good to know before you start:
+
+- **A suggestion adds an option. It never replaces the current word.** Other reviewers can endorse
+  it, and a pack changes only when the evidence says so (§6, §9). If you would teach a different
+  word, put it in Suggested.
+- **You get a reply within 7 days.** A maintainer runs the review check, reads every line, and
+  replies on the pull request: either it is ready to merge, or the reply names exactly what to fix.
+- **Fixes go on the same branch.** Push to the branch your pull request came from, with each commit
+  signed off. To add a missing sign-off to your last commit, run `git commit --amend -s --no-edit`
+  and push again with `--force-with-lease`.
+- **Your file is public once merged, comments included.** Never put an email address or private
+  contact detail in it (§11).
+
+Section 7 covers the file in detail.
 
 ---
 
@@ -74,7 +106,7 @@ Anyone may submit. Endorsements are weighted by rung:
 | --- | --- | --- |
 | anonymous | no account | recorded, weighted zero |
 | contributor | signed-in contributor | counted, low weight |
-| native (claimed) | you tell us this is your language when you sign up | counts toward `reviewed` |
+| native (claimed) | you tell us this is your language in the "About you" section of your review | counts toward `reviewed` |
 | native (verified) | vouched by an existing verified reviewer of your language, a short verification call with a maintainer, or institutional affiliation as a teacher or linguist | full native weight; counts toward the quorum that promotes a pack |
 | certified | credentialed engagements through the education work (see §10) | highest |
 | maintainer | Legesher maintainers | equal to certified. On what a word means in your language, a maintainer does not outrank a certified native speaker |
@@ -89,27 +121,27 @@ retroactively; the review app will offer that in one step once it ships.
 
 ## 5. What reviewing looks like
 
-Today reviewing happens through GitHub issue forms. They need only a GitHub account and nothing installed. A richer review surface is being built on the
-same store and the same rules, including one that does not assume you know git and works properly
-for right-to-left scripts. The forms are the starting point, and they will keep working.
+Today reviewing happens by pull request: you fill in your language's template and submit it as a
+file (§7). A richer review surface is being built on the same store and the same rules, including
+one that does not assume you know git and works properly for right-to-left scripts.
 
 **We ask for your word first.** The most valuable signal a corpus can hold is the word a fluent
 speaker reaches for *before* seeing anyone else's answer. Once you have seen a machine's confident
-suggestion, you cannot un-see it. So the propose form asks for your rendering without showing you
-the current pick, and the review app will do the same for every term. The bulk review form is the
-exception, because you are reading the shipped pack: those answers are recorded as responses to
-candidates rather than as first instincts, and both are kept, distinctly.
+suggestion, you cannot un-see it. The template shows you the current pick, so your answers there
+are recorded as responses to the shipped pack rather than as first instincts. A later review surface
+will ask for your word before showing anyone else's, and both kinds of answer are kept, distinctly.
 
 **Endorse, pass, or flag (and rank, tag, comment).** Endorse every word you would genuinely teach,
 including words other people proposed. Rank your endorsements: slot 1 means "ship this". Tag
 descriptors such as transliteration, loanword, established, coinage, region, or register. Passing on
 a word is always allowed and means "no opinion". It is never held against the word or against you.
-(On the bulk review form these read as ✅ = endorse, ❓ = offer an alternative, 🤔 = a comment worth
-keeping.)
+(In the template, `✓` in Comments endorses, `Keep` plus a note endorses with a recorded limitation,
+a word in Suggested offers an option, and an untouched row is a pass.)
 
-**There are no downvotes.** Disagree by endorsing a better word, or by proposing one. A
-[flag](https://github.com/legesher/language-packs/issues/new?template=pack_feedback.yml) is reserved for real problems (harmful,
-wrong in meaning, wrong register, spam) and asks for a sentence of explanation. A person reads every flag. Flags do not change a score.
+**There are no downvotes.** Disagree by endorsing a better word, or by proposing one. A flag is
+reserved for real problems (harmful, wrong in meaning, wrong register, spam): say so in the Comments
+column of that row with a sentence of explanation, or write to <contribute@legesher.com> if it should
+not wait for a review. A person reads every flag. Flags do not change a score.
 
 **Partial reviews are welcome.** Thirty concepts reviewed carefully are worth more than 180 reviewed in a hurry.
 
@@ -123,10 +155,10 @@ flag routes to a person and rejects nothing on its own.
 
 Step by step:
 
-1. **You submit**: a form, or a review session by pull request (§7).
-2. **A person reads it.** Every submission is held until a maintainer has screened it (§12). Your
-   issue will be **closed with a reply** naming exactly what landed. Closed means *recorded*, never
-   rejected. A submission that cannot be cleared yet is either **held** (usually: waiting for a
+1. **You submit**: a review file by pull request (§7).
+2. **A person reads it.** Every submission is held until a maintainer has screened it (§12).
+   Within 7 days you get a **reply on your pull request** naming exactly what to fix, or what
+   landed once it merges. A submission that cannot be cleared yet is either **held** (usually: waiting for a
    native reviewer of your language to exist) or **returned or rejected with the reason cited**. A
    held submission stays out of sight until a reviewer can look at it. A held submission is not cleared by time passing. It needs a reviewer.
 3. **Cleared words join the corpus.** The evidence lives in
@@ -145,16 +177,14 @@ Step by step:
 
 ## 7. Reviewing by file
 
-For a full session over many terms, a file works better than the forms. Two file formats are
-accepted, and both land in `reviews/` by pull request.
-
-**A markdown review, from the reference template.** Take your language's template from
+Every review is a file, submitted by pull request into `reviews/`. Take your language's template from
 `reference/<tag>.md`, where `<tag>` is the language's BCP 47 tag (`si`, `zh-Hans`, `fil`): the
 pack's `REFERENCE.md`, mirrored here, whose term tables already carry empty `Suggested` and
 `Comments` columns, whose header names the pack version and the Python view the words come from,
 and whose top carries an unchecked consent block. For each term you have an opinion on, endorse it
-(`✓` in Comments), keep it with a note (`Keep` plus the limitation), or suggest a replacement (the
-word in Suggested, your reasoning in Comments). Leave the other rows untouched (an untouched row
+(`✓` in Comments), keep it with a note (`Keep` plus the limitation), or offer another word (the
+word in Suggested, your reasoning in Comments; it adds an option and never replaces the current
+word). Leave the other rows untouched (an untouched row
 means no opinion), and leave the first line of the file and the `Key`, `English`, current-word and
 `Applies to` columns as they are: the importer reads them. Language-wide observations go under
 "Notes for Future Updates". Save the file as
@@ -165,18 +195,11 @@ request; after a pack version bump, the new review is a new file,
 username in the file name must be the account that opens the pull request. AI help with formatting
 is welcome; the linguistic judgment must be yours, and the consent block says so.
 
-**A JSON bundle, for apps and scripts.** Take the **review kit** for your language (terms,
-candidates, and context, deliberately without anyone else's verdicts), record your endorsements,
-passes, flags, rankings, and your own renderings, and produce a **bundle**: a single JSON file in
-the shape the bundle schema defines (it ships with the `legesher-i18n` package). A review app that
-walks the kit and writes the bundle for you is being built; writing it by hand or by script works
-today.
-
 Submit the file as a pull request into `reviews/<tag>/`. Checks annotate the PR with
 schema and mechanical results; a maintainer does the human screen; **merging means your evidence is
 accepted** and goes through the same import, screening, and corpus steps as every other
-contribution. While the checks are being set up, a maintainer runs the same validation by hand,
-which takes a little longer.
+contribution. While the checks are being set up, a maintainer runs the same validation by hand
+and replies within 7 days.
 
 One rule: **a review file is public.** Never put an email address or private contact detail in one.
 To reach us privately, see §11.
@@ -185,6 +208,8 @@ To reach us privately, see §11.
 
 Only these block a submission:
 
+- **Consent.** Every Required box under "Before you submit" is ticked, and the "Credit me as" line
+  keeps one choice. Without them a review cannot be imported; tick them and push again.
 - **Valid identifiers.** Terms must be valid identifiers: no spaces or punctuation, stable under
   Unicode NFKC normalization, consistent script, no invisible characters. A failing term is kept as
   evidence but cannot ship.
@@ -249,15 +274,16 @@ your identity remains withdrawable (§11).
 ## 11. Licensing, attribution, and your data
 
 - Words and comments you submit ship inside the Apache-2.0 language packs and are published in the
-  public research corpus under CC BY 4.0. On the pull-request lane your commits carry a
+  public research corpus under CC BY 4.0. Your commits carry a
   [DCO sign-off](CONTRIBUTING.md#developer-certificate-of-origin-dco) attesting the work is yours to
-  give; on the issue-form lanes there is no sign-off step. The consent box you tick records the
-  same attestation together with the notice version.
+  give, and the Required boxes you tick record the same attestation together with the notice
+  version.
 - The published corpus credits you by opaque contributor id, plus your chosen credit where you chose
   one. Your identity details are never part of the published dataset, and you may withdraw at any
   time: counts survive, your personal data does not.
-- **We never ask for your email on a public form.** GitHub issues are public, so contact details
-  travel a private channel instead: write to <contribute@legesher.com> and mention your issue. An
+- **We never ask for your email in a public file.** Pull requests and review files are public, so
+  contact details travel a private channel instead: write to <contribute@legesher.com> and mention
+  your pull request. An
   address given that way is stored privately alongside your identity, never in the repository, never
   in the dataset, and deleted with the rest of your identity if you withdraw.
 - Terms shown from other projects appear with attribution. Endorsing one records *your* independent
@@ -278,7 +304,8 @@ applying to you retroactively.
 **A person reads your submission before it goes anywhere.** Everything a stranger submits is held
 until a maintainer has looked at it: mechanical validators run first, and then a human judges the
 rendering itself before it becomes visible to other reviewers or exported to the corpus. There is
-one maintainer today, so the queue moves as capacity allows, and you will always get a reply.
+one maintainer today, so screening moves as capacity allows, and you get a first reply within 7
+days.
 
 Automated checks catch what a machine can catch (invalid identifiers, invisible and confusable
 characters). The judgment on the word itself is a person's, and nothing clears without one.
