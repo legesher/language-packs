@@ -32,17 +32,18 @@ Please read these first:
 
 ## What happens to a submission
 
-1. The review check runs on your pull request, and a maintainer reads every line before anything is
-   shown to anyone else or exported.
+1. A maintainer runs the review check on your pull request and reads every line before anything is
+   imported or exported.
 2. Within 7 days, a maintainer replies on the pull request: either it is ready to merge, or the reply
    names exactly what to fix. Push fixes to the same branch, with each commit signed off.
-3. After the merge, your endorsements and suggestions are added to the public
+3. After the merge, a maintainer imports your review, and your endorsements and suggestions appear
+   in the next published release of the
    [language corpus](https://huggingface.co/datasets/legesher/language-corpus). A new word you
    suggest is held until a maintainer clears it.
 4. When a language has enough review, its pack is released again.
 
-Your review file, comments included, is public in this repository once merged, so never put an
-email address or private contact detail in it.
+Your review file, comments included, is public as soon as you open the pull request, so never put
+an email address or private contact detail in it.
 
 A submission never edits a released pack directly. Packs are built from the corpus, so a word is
 changed through review.
@@ -76,8 +77,8 @@ git commit --amend -s --no-edit
 git push --force-with-lease
 ```
 
-In a review file, the Required box for the Developer Certificate of Origin records the same
-confirmation, together with the version of the contributor notice you agreed to.
+In a review file, the Required boxes record the same confirmation, together with the version of
+the contributor notice you agreed to.
 
 ## Questions
 

@@ -12,10 +12,10 @@ reference template (`reference/<tag>.md`) with the Suggested and Comments column
    version bump, a new review is `<tag>-<your-github-username>-<pack-version>.md`.
 2. Fill in "About you", tick the Required boxes under "Before you submit", and keep one choice on
    the "Credit me as" line.
-3. Open a pull request, each commit signed off. Checks report validation results on the pull
-   request. While the checks are being set up, a maintainer runs the same validation by hand.
-4. A maintainer replies within 7 days. When the pull request is merged, your review is accepted and
-   goes through the same import, screening, and corpus steps as every other contribution.
+3. Open a pull request, each commit signed off. A maintainer runs the review check on your pull
+   request (an automatic check is being set up).
+4. A maintainer replies within 7 days. When the pull request is merged, your review goes through the
+   same import, screening, and corpus steps as every other contribution.
 
 ## Rules
 

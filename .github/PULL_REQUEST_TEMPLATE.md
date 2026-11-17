@@ -1,5 +1,5 @@
 <!--
-Thank you for reviewing. The checklist below is what the review check looks for.
+Thank you for reviewing. The checklist below is what a maintainer looks for.
 Not a review? Delete the checklist and fill in "Not a review" instead.
 -->
 

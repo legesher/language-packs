@@ -41,8 +41,8 @@ Good to know before you start:
 - **Fixes go on the same branch.** Push to the branch your pull request came from, with each commit
   signed off. To add a missing sign-off to your last commit, run `git commit --amend -s --no-edit`
   and push again with `--force-with-lease`.
-- **Your file is public once merged, comments included.** Never put an email address or private
-  contact detail in it (§11).
+- **Your file is public as soon as you open the pull request, comments included.** Never put an
+  email address or private contact detail in it (§11).
 
 Section 7 covers the file in detail.
 
@@ -107,7 +107,7 @@ Anyone may submit. Endorsements are weighted by rung:
 | --- | --- | --- |
 | anonymous | no account | recorded, weighted zero |
 | contributor | signed-in contributor | counted, low weight |
-| native (claimed) | you tell us this is your language in the "About you" section of your review | counts toward `reviewed` |
+| native (claimed) | you keep "native speaker" on the relationship line under "About you" in your review | counts toward `reviewed` |
 | native (verified) | vouched by an existing verified reviewer of your language, a short verification call with a maintainer, or institutional affiliation as a teacher or linguist | full native weight; counts toward the quorum that promotes a pack |
 | certified | credentialed engagements through the education work (see §10) | highest |
 | maintainer | Legesher maintainers | equal to certified. On what a word means in your language, a maintainer does not outrank a certified native speaker |
@@ -142,7 +142,8 @@ a word in Suggested offers an option, and an untouched row is a pass.)
 **There are no downvotes.** Disagree by endorsing a better word, or by proposing one. A flag is
 reserved for real problems (harmful, wrong in meaning, wrong register, spam): say so in the Comments
 column of that row with a sentence of explanation, or write to <contribute@legesher.com> if it should
-not wait for a review. A person reads every flag. Flags do not change a score.
+not wait for a review. A maintainer reads every comment and follows up on each one. Flags do not
+change a score.
 
 **Partial reviews are welcome.** Thirty concepts reviewed carefully are worth more than 180 reviewed in a hurry.
 
@@ -196,11 +197,10 @@ request; after a pack version bump, the new review is a new file,
 username in the file name must be the account that opens the pull request. AI help with formatting
 is welcome; the linguistic judgment must be yours, and the consent block says so.
 
-Submit the file as a pull request into `reviews/<tag>/`. Checks annotate the PR with
-schema and mechanical results; a maintainer does the human screen; **merging means your evidence is
-accepted** and goes through the same import, screening, and corpus steps as every other
-contribution. While the checks are being set up, a maintainer runs the same validation by hand
-and replies within 7 days.
+Submit the file as a pull request into `reviews/<tag>/`. A maintainer runs the review check on
+your pull request (an automatic check is being set up), does the human screen, and replies within
+7 days. **Merging means your evidence is accepted** and goes through the same import, screening,
+and corpus steps as every other contribution.
 
 One rule: **a review file is public.** Never put an email address or private contact detail in one.
 To reach us privately, see §11.
