@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
+- name: Review a language pack
+  url: https://github.com/legesher/language-packs#start-here
+  about: Reviews arrive as pull requests. Copy your language's template, fill it in, and open a pull request.
+- name: Request a new language
+  url: https://github.com/legesher/legesher/issues/new?template=add_language.yml
+  about: Ask for a language that has no pack yet
 - name: GitHub Discussions
   url: https://github.com/legesher/language-packs/discussions
   about: Ask questions and discuss ideas with the community

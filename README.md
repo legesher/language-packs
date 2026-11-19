@@ -13,16 +13,20 @@
 
 ## Start here
 
-You do not need to know how to code to contribute, and you do not need to know Python to review a Python pack.
+Reviews arrive as pull requests. You need a GitHub account and to be comfortable editing a file and opening a pull request. You do not need to know Python to review a Python pack.
 
-- **Offer a word.** [Propose a localization option](https://github.com/legesher/language-packs/issues/new?template=propose_translation.yml): select a term, share your word + give your reasoning.
-- **Review a language pack.** [Review many terms in one issue](https://github.com/legesher/language-packs/issues/new?template=language_pack_review.yml), or [review by file](REVIEWING.md#7-reviewing-by-file) for a full session.
-- **Join as a reviewer.** [Sign up](https://github.com/legesher/language-packs/issues/new?template=reviewer_signup.yml) and tell us your language.
-- **Read the guide.** [REVIEWING.md](REVIEWING.md) explains how reviewing works from start to finish. It is written for linguists and teachers as well as developers.
+1. Copy your language's template, `reference/<tag>.md`, to `reviews/<tag>/<tag>-<your-github-username>.md`. The tag is your language's code: `reference/ml.md` is Malayalam.
+2. Work through the terms. Put `✓` in Comments for a word you would teach, or offer another word in Suggested with your reasoning in Comments. Leave a row untouched if you have no opinion.
+3. Fill in "About you", tick the Required boxes under "Before you submit", and keep one choice on the "Credit me as" line.
+4. Open a pull request with your file, with each commit signed off (`git commit -s`).
+
+A maintainer runs the review check and replies within 7 days, naming exactly what to fix if anything needs to change. The [reviewing guide](REVIEWING.md#start-here-review-by-pull-request) walks through each step.
+
+More ways to contribute are coming. For now, every review starts with a pull request.
 
 ## How your contribution helps shape the future
 
-1. A maintainer reads every submission before it is shown to anyone else.
+1. A maintainer runs the review check on your pull request, reads every line, and replies within 7 days.
 2. Once it is cleared, your word is added to the **[language corpus](https://huggingface.co/datasets/legesher/language-corpus)** on Hugging Face. The corpus holds every word anyone has offered for a term and every endorsement it has received. It is openly licensed (CC BY 4.0), and contributors appear in it only as opaque ids.
 3. Reviewers who speak the language endorse the words they would teach.
 4. When a language has enough review, its pack is released again with the community's words.
@@ -40,7 +44,7 @@ The packs that ship are published as the [language-packs dataset](https://huggin
 
 ## Ground Rules
 
-- [Contributing](CONTRIBUTING.md): the ways to contribute and what to expect.
+- [Contributing](CONTRIBUTING.md): the pathway and what to expect.
 - [Reviewing guide](REVIEWING.md): how reviewing works, who can review, and how a pack moves from experimental to official.
 - [Community Guidelines](COMMUNITY_GUIDELINES.md): how we work together on a shared corpus, and how disagreement is handled.
 - [AI-Assisted Contributions](AI_CONTRIBUTIONS.md): AI-assisted work is welcome when you say so, and people make the final decisions.
